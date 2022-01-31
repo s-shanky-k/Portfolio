@@ -23,37 +23,37 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="work" onClick={closeMobileMenu}>
+                    <Link className='nav-links' to="work" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0}>
                     <i className="material-icons-outlined">work</i>
                     <span className='nav-title'>Work</span>
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="education" onClick={closeMobileMenu}>
+                    <Link className='nav-links' to="education" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0}>
                     <i className="material-icons-outlined">school</i>
                     <span className='nav-title'>Education</span>
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="sills" onClick={closeMobileMenu}>
+                    <Link className='nav-links' to="sills" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0}>
                     <i className="material-icons-outlined">engineering</i>
                     <span className='nav-title'>Skills</span>
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="publications" onClick={closeMobileMenu}>
+                    <Link className='nav-links' to="publications" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0}>
                     <i className="material-icons-outlined">library_books</i>
                     <span className='nav-title'>Publications</span>
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="projects" onClick={closeMobileMenu}>
+                    <Link className='nav-links' to="projects" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0}>
                     <i className="material-icons-outlined">code</i>
                     <span className='nav-title'>Projects</span>
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="certificates" onClick={closeMobileMenu}>
+                    <Link className='nav-links' to="certificates" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0}>
                     <i className="material-icons-outlined">verified_user</i>
                     <span className='nav-title'>Certificates</span>
                     </Link>
@@ -71,13 +71,13 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="resume" onClick={closeMobileMenu}>
+                    <Link className='nav-links' to="resume" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0}>
                     <i className="material-icons-outlined">insert_drive_file</i>
                     <span className='nav-title'>Resume</span>
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="contact" onClick={closeMobileMenu}>
+                    <Link className='nav-links' to="contact" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0}>
                     <i className="material-icons-outlined">alternate_email</i>
                     <span className='nav-title'>Contact</span>
                     </Link>
