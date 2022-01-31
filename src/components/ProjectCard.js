@@ -21,7 +21,7 @@ function ProjectCard({props}) {
   return (
         // <>
         // <div className="flex items-stretch w-10/12">
-        //     <div className="bg-white rounded-lg shadow-lg overflow-hidded p-8 w-3/5 -mr-12 ml-6 z-0">
+        //     <div className="bg-white rounded-lg shadow-lg overflow-hidden p-8 w-3/5 -mr-12 ml-6 z-0">
         //         <h2 className="text-2xl font-semibold">Title</h2>
         //         <span className="text-gray-600 font-semibold">This is subset</span>
         //         <p className="mt-4 text-gray-700">More text.asjfdnasdjknf asjnfjakinfk afnjadnfjkn jnjfna</p>
@@ -39,20 +39,20 @@ function ProjectCard({props}) {
         {props.type === 'left' &&
         <div className="flex items-stretch w-5/6 justify-center my-12">
             <div className="flex flex-col w-2/4 justify-center">
-                <div className="text-[#e6873f] overflow-hidded p-0 mb-2 mt-6 w-full">
+                <div className="text-[#e6873f] p-0 mb-2 mt-6 w-full">
                     <h2 className="text-2xl font-bold">{props.title}</h2>
                 </div>
-                <div className="bg-[#050505] rounded-md shadow-lg overflow-hidded p-6 w-full !z-0 my-3">
+                <div className="bg-[#050505] rounded-md shadow-lg  p-6 w-full h-fit !z-0 my-3">
                     {props.content.map((item, index) => 
                         <p key={index + 1} className="mt-1 text-[#ffd68e]">{item}</p>
                     )}
                 </div>    
-                <ul className="flex text-[#e6873f] overflow-hidded p-0 my-2 w-full">
+                <ul className="flex text-[#e6873f] p-0 my-2 w-full h-fit">
                     {props.skills.map((item, index) => 
                         <li key={index + 1} className="mr-3 font-semibold">{item}</li>
                     )}
                 </ul>
-                <div className="overflow-hidded p-0 mt-2 w-full space-x-4">
+                <div className="p-0 mt-2 w-full space-x-4">
                     {props.git !== undefined &&
                         <a href={props.git} target="_blank">
                             <i class="fab fa-github text-[#d52158] text-2xl"></i>
@@ -77,21 +77,21 @@ function ProjectCard({props}) {
             <div className="w-2/4 bg-cover bg-center shadow-lg rounded-lg -mr-16">
                 <img src={`${process.env.PUBLIC_URL}/assets/images/` + `${props.img}`} alt="" className="w-full h-full rounded-lg" />
             </div>
-            <div className="flex flex-col w-2/4  text-right justify-center">
-                <div className="text-[#e6873f] overflow-hidded p-0 mb-2 mt-6 w-full">
+            <div className="flex flex-col w-2/4 text-right justify-center">
+                <div className="text-[#e6873f] p-0 mb-2 mt-6 w-full">
                     <h2 className="text-2xl font-bold">{props.title}</h2>
                 </div>
-                <div className="bg-[#050505] rounded-md shadow-lg overflow-hidded p-6 w-full z-0 my-3">
+                <div className="bg-[#050505] rounded-md shadow-lg p-6 w-full z-0 my-3">
                     {props.content.map((item, index) => 
                         <p key={index + 1} className="mt-1 text-[#ffd68e]">{item}</p>
                     )}
                 </div>    
-                <ul className="flex text-[#e6873f] overflow-hidded p-0 my-2 w-full justify-end">
+                <ul className="flex text-[#e6873f] p-0 my-2 w-full justify-end">
                     {props.skills.map((item, index) => 
                         <li key={index + 1} className="ml-3 font-semibold">{item}</li>
                     )}
                 </ul>
-                <div className="overflow-hidded p-0 mt-2 w-full space-x-4">
+                <div className="overflow-hidden p-0 mt-2 w-full space-x-4">
                     {props.git !== undefined &&
                         <a href={props.git} target="_blank">
                             <i class="fab fa-github text-[#d52158] text-2xl"></i>
