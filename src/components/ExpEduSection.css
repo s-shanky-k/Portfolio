@@ -1,11 +1,11 @@
-.aboutme-container{
+.expedu-container{
     height: 100vh;
     z-index: 1;
     width: 100%;
-    margin-top: -48px;
+    /* margin-top: -48px; */
     padding-top: 10px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: flex-start;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
@@ -13,7 +13,7 @@
     object-fit: contain;
 }
 
-.aboutme-title {
+.expedu-title {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -24,19 +24,19 @@
     
 }
 
-.aboutme-title h1{
+.expedu-title h1{
     color: #05d5ba;
     font-size: 20px;
     margin-left: 7px;
 }
 
-.aboutme-title .material-icons-outlined {
+.expedu-title .material-icons-outlined {
     padding-top: 0px;
     color: #05d5ba;
     font-size: 24px;
 }
 
-.aboutme-content{
+.expedu-content{
     height: 100%;
     width: 100%;
     display: flex;
@@ -48,21 +48,7 @@
     object-fit: contain;
 }
 
-.aboutme-img-container{
-    width: 40%;
-    height: 100%;
-    padding: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.aboutme-img{
-    height: 60%;
-    width: 50%;
-}
-
-.aboutme-text{
+.expedu-text{
     width: 60%;
     height: 100%;
     display: flex;
@@ -72,9 +58,28 @@
     color: #DDDDDD
 }
 
+.expedu-education{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.expedu-experience{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
 
 @media screen and (max-width: 1024px) {
-    .aboutme-container{
+    
+    .expedu-container{
         height: fit-content;
         z-index: 1;
         width: 100%;
@@ -88,7 +93,8 @@
         background-color: #121212;
         object-fit: contain;
     }
-    .aboutme-content{
+
+    .expedu-content{
         height: 100%;
         width: 100%;
         display: flex;
@@ -100,40 +106,40 @@
         object-fit: contain;
     }
 
-    .aboutme-img-container{
-        width: 40%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .aboutme-text{
-        width: 100%;
+    .expedu-education{
+        width: 50%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #DDDDDD;
+    }
+
+    .expedu-experience{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 
 @media screen and (max-width: 640px) {
 
-    .aboutme-img-container{
+    .expedu-img-container{
         width: 70%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .aboutme-img{
+    .expedu-img{
         height: 100%;
         width: 100%;
     }
-    .aboutme-text{
+    .expedu-text{
         width: 100%;
         height: 100%;
         display: flex;
