@@ -111,23 +111,23 @@ function ProjectCard({props}) {
         {props.type === 'left' &&
         <div className="flex items-stretch w-5/6 justify-center my-12">
             <div className="flex flex-col w-full md:w-2/4 justify-center">
-                <div className="text-[#e6873f] p-0 mb-2 mt-6 w-full">
+                <div className="text-[#e6873f] p-0 mb-2 mt-6 w-full !z-0">
                     <h2 className="text-xl md:text-2xl font-bold ">{props.title}</h2>
                 </div>
-                <div className="bg-[#050505] rounded-md shadow-lg  p-6 w-full h-fit !z-0 my-3">
+                <div className="bg-[#050505] rounded-md shadow-lg p-6 w-full !z-0 my-3 transform transition duration-500 hover:scale-105">
                     {props.content.map((item, index) => 
                         <p key={index + 1} className="mt-1 text-[#ffd68e] text-sm md:text-base">{item}</p>
                     )}
                 </div>    
-                <ul className="flex text-[#e6873f] p-0 my-2 w-full h-fit">
+                <ul className="flex text-[#e6873f] p-0 my-2 w-full !z-0">
                     {props.skills.map((item, index) => 
-                        <li key={index + 1} className="mr-3 font-semibold text-sm md:text-base">{item}</li>
+                        <li key={index + 1} className="mr-3 font-semibold text-sm bg-[#050505] rounded-2xl py-1 px-2 md:text-base sm:bg-transparent sm:p-0">{item}</li>
                     )}
                 </ul>
-                <div className="p-0 mt-2 w-full space-x-4">
+                <div className="overflow-hidden p-0 mt-2 w-full space-x-4">
                     {props.git !== undefined &&
                         <a href={props.git} target="_blank">
-                            <i class="fab fa-github text-gray-500  text-2xl hover:text-[#d52158] transition ease-in-out duration-300"></i>
+                            <i class="fab fa-github text-gray-500 text-2xl hover:text-[#d52158] transition ease-in-out duration-300"></i>
                         </a>
                     }
                     {props.link !== undefined &&
@@ -150,17 +150,17 @@ function ProjectCard({props}) {
                 <img src={`${process.env.PUBLIC_URL}/assets/images/` + `${props.img}`} alt="" className="w-full h-full rounded-lg" />
             </div>
             <div className="flex flex-col w-full md:w-2/4 text-right justify-center">
-                <div className="text-[#e6873f] p-0 mb-2 mt-6 w-full">
-                    <h2 className="text-xl md:text-2xl  font-bold">{props.title}</h2>
+                <div className="text-[#e6873f] p-0 mb-2 mt-6 w-full !z-0">
+                    <h2 className="text-xl md:text-2xl font-bold">{props.title}</h2>
                 </div>
-                <div className="bg-[#050505] rounded-md shadow-lg p-6 w-full z-0 my-3">
+                <div className="bg-[#050505] rounded-md shadow-lg p-6 w-full !z-0 my-3 transform transition duration-500 hover:scale-105">
                     {props.content.map((item, index) => 
                         <p key={index + 1} className="mt-1 text-[#ffd68e] text-sm md:text-base">{item}</p>
                     )}
                 </div>    
-                <ul className="flex text-[#e6873f] p-0 my-2 w-full justify-end">
+                <ul className="flex text-[#e6873f] p-0 my-2 w-full justify-end !z-0">
                     {props.skills.map((item, index) => 
-                        <li key={index + 1} className="ml-3 font-semibold text-sm md:text-base">{item}</li>
+                        <li key={index + 1} className="ml-3 font-semibold bg-[#050505] rounded-2xl py-1 px-2 text-sm md:text-base sm:bg-transparent sm:p-0">{item}</li>
                     )}
                 </ul>
                 <div className="overflow-hidden p-0 mt-2 w-full space-x-4">
