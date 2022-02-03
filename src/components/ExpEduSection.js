@@ -46,13 +46,13 @@ function ExpEduSection() {
                                                 startDate:"Apr'20", 
                                                 endDate:"Mar'20"},
                                                 
-                                                {name:"SBOA School & Junior College Fargo",
+                                                {name:"SBOA School & Junior College",
                                                 img:"pic-sboa.jfif",
                                                 domain:"Higher Secondary School", 
                                                 startDate:"Apr'20", 
                                                 endDate:"Mar'20"},
 
-                                                {name:"SBOA School & Junior College Fargo",
+                                                {name:"SBOA School & Junior College",
                                                 img:"pic-sboa.jfif",
                                                 domain:"Secondary School", 
                                                 startDate:"Apr'20", 
