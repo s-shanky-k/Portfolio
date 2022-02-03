@@ -35,7 +35,7 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="sills" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
+                    <Link className='nav-links' to="skills" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
                     <i className="material-icons-outlined">engineering</i>
                     <span className='nav-title'>Skills</span>
                     </Link>
