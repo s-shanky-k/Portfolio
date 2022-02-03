@@ -35,9 +35,9 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="skills" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
-                    <i className="material-icons-outlined">engineering</i>
-                    <span className='nav-title'>Skills</span>
+                    <Link className='nav-links' to="projects" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
+                    <i className="material-icons-outlined">code</i>
+                    <span className='nav-title'>Projects</span>
                     </Link>
                 </li>
                 <li className='nav-item'>
@@ -47,9 +47,15 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="projects" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
-                    <i className="material-icons-outlined">code</i>
-                    <span className='nav-title'>Projects</span>
+                    <Link className='nav-links' to="skills" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
+                    <i className="material-icons-outlined">engineering</i>
+                    <span className='nav-title'>Skills</span>
+                    </Link>
+                </li>
+                <li className='nav-item'>
+                    <Link className='nav-links' to="certificates" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
+                    <i className="material-icons-outlined">emoji_events</i>
+                    <span className='nav-title'>Achievements</span>
                     </Link>
                 </li>
                 <li className='nav-item'>

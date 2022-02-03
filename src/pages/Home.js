@@ -11,8 +11,8 @@ function Home() {
     <>
     <AboutMeSection />
     <ExpEduSection />
-    <SkillsSection />
     <ProjectsSection />
+    <SkillsSection />
     <PhotoSection />
     <MusicSection />
     </>

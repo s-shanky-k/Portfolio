@@ -31,7 +31,7 @@ function ProjectsSection() {
                 }
                 {showMore &&
                 <>
-                    <div class="w-full min-h-screen gap-5 flex-wrap flex justify-center items-center">
+                    <div class="w-full h-fit gap-5 flex-wrap flex justify-center items-center">
                         <ProjectsSimpleCard props={{img: "pic1.jpg", link:"https://brittanychiang.com/", title:"Boom1", content:["Boom this is sikhnd fiuhweias hnfasdn cfjan uicna wenc qnc ioqnnc ejo wqnofncq oijeifjhaK LMCMAIJFQEOI WJFIONE"], skills:["Java", "C++"], git:"https://github.com/s-shanky-k"}}/>
                         <ProjectsSimpleCard props={{img: "pic1.jpg", title:"Boom1", content:["Boom this is sikhnd fiuhweias hnfasdn cfjan uicna wenc qnc ioqnnc ejo wqnofncq oijeifjhaK LMCMAIJFQEOI WJFIONE"], skills:["Java", "C++"], git:"https://github.com/s-shanky-k"}}/>
                         <ProjectsSimpleCard props={{img: "pic1.jpg", title:"Boom2", content:["Boom this is sikhndfi uhweiash nfasdn cfjanu icnaw encqnc", "ioqn ncejowq nofn cqoijeifjh aKLMCMAIJFQ EOIWJFIONE",  "ioqnnce jowqnofnc qoijeifjhaKL MCMAIJFQEOI WJFIONE"], skills:["Java", "Python"], git:"https://github.com/s-shanky-k"}}/>
