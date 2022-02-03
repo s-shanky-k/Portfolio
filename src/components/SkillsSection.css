@@ -1,5 +1,5 @@
 .skills-container{
-    height: 100vh;
+    height: fit-content;
     z-index: 1;
     width: 100%;
     padding-top: 5px;
@@ -55,10 +55,4 @@
     justify-content: flex-start;
     color: #DDDDDD;
     padding: 0 1rem;
-}
-
-@media screen and (max-width: 768px) {
-    .skills-container{
-        height: fit-content;
-    }
 }

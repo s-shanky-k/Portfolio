@@ -13,35 +13,21 @@ function SkillsSection() {
                 <div className="skills-text">
                     This what I am listening to now!
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-8 px-2 pt-2">
-                    <SkillsCard props={{img:'pic-wf.png', name:"Java"}}/>
-                    <SkillsCard props={{img:'pic-sboa.jfif', name:"Javascript"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Temsorflow"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"React"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"C++"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Python"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Java"}}/>
-                    <SkillsCard props={{img:'pic-sboa.jfif', name:"Javascript"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Temsorflow"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"React"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"C++"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Python"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Java"}}/>
-                    <SkillsCard props={{img:'pic-sboa.jfif', name:"Javascript"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Temsorflow"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"React"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"C++"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Python"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Java"}}/>
-                    <SkillsCard props={{img:'pic-sboa.jfif', name:"Javascript"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Temsorflow"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"React"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"C++"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Python"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Java"}}/>
-                    <SkillsCard props={{img:'pic-sboa.jfif', name:"Javascript"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"Temsorflow"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', name:"React"}}/>
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 px-2 pt-4"> */}
+                <div class="w-full gap-5 flex-wrap flex justify-center items-center px-2 pt-4">
+                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Machine Learning", skills:"Scikit/Tensorflow"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Web Development", skills:"HTML/CSS/React"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
                 </div>
             </div>
         </div>
