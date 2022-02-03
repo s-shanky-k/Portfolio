@@ -34,8 +34,6 @@ function AboutMeSection() {
                     <p>This is about me</p>
                     <p>This is about me</p>
                     <p>This is about me</p>
-                    <p>This is about me</p>
-                    <p>This is about me</p>
                 </div>
             </div>
         </div>
