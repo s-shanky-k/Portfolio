@@ -19,7 +19,7 @@ function Timeline({props}) {
             </div>
             <h2 className="flex text-base items-center mb-1 font-normal text-white">SDE</h2>
             <div className="mb-4 text-sm font-normal text-gray-400 space-x-2">
-                <i class="fas fa-map-marker-alt"></i>
+                <i className="fas fa-map-marker-alt"></i>
                 <span>Bangalore</span>
             </div>
         </li> */}
@@ -37,8 +37,8 @@ function Timeline({props}) {
             <TimelineEducationCard props={{name:"SBOA School and Junior College", img:"pic_wf.png", domain:"High School", startDate:"Apr'20", endDate:"Mar'20"}}/>
         </li> */}
         {(props.type === 'experience') &&
-            props.experience.map((item) =>  
-                <li className="mb-8 ml-6">            
+            props.experience.map((item, index) =>  
+                <li className="mb-8 ml-6" key={index+1}>            
                     <span className="flex absolute -left-3 justify-center items-center w-5 h-5 rounded-full ring-8 ring-[#410825] bg-[#800f49]">
                         <i className="text-xs text-[#ed016a] fas fa-circle"></i>
                     </span>
@@ -48,8 +48,8 @@ function Timeline({props}) {
         }
         
         {(props.type === 'education') && 
-            props.education.map((item) =>
-            <li className="mb-8 ml-6">            
+            props.education.map((item, index) =>
+            <li className="mb-8 ml-6" key={index+1}>            
                 <span className="flex absolute -left-3 justify-center items-center w-5 h-5 rounded-full ring-8 ring-[#410825] bg-[#800f49]">
                     <i className="text-xs text-[#ed016a] fas fa-circle"></i>
                 </span>

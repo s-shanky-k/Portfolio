@@ -6,7 +6,7 @@ import React from 'react';
 
 function SkillsCard({props}) {
   return (
-    <div className="p-3 rounded-md bg-transparent border-[#800f49] border w-72 hover:border-[#ad365a]">
+    <div className="p-3 rounded-md bg-transparent border-[#800f49] border w-72 hover:border-[#ed016a]">
         <div className="flex w-full h-full items-center">
             <div className='w-8 h-full mr-5'>
                 <img src={`${process.env.PUBLIC_URL}/assets/images/${props.img}`} className='w-full h-full object-contain'></img>

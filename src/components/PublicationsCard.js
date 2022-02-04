@@ -10,21 +10,21 @@ import React from 'react';
 
 function PublicationsCard({props}) {
   return (
-    <div class="flex flex-col items-center w-5/6 bg-[#050505] border-[#800f49] border-4 rounded-lg shadow-md md:flex-row">
-        <img class="object-cover w-fit mt-4 h-96 rounded-lg md:ml-2 md:my-2 md:h-auto md:w-48 transform transition duration-500 hover:scale-105" src={`${process.env.PUBLIC_URL}/assets/images/${props.img}`} alt="" />
-        <div class="flex flex-col justify-between p-4 leadng-normal">
-            <div class="font-bold text-xl md:text-2xl mb-2 text-[#e6873f]">{props.title}</div>
-            <p class="mb-2 text-sm md:text-base text-[#ffd68e]">{props.content}</p>
-            <p class="mb-2 font-semibold text-sm md:text-base text-[#e6873f]">{props.publisher}</p>
+    <div className="flex flex-col items-center w-5/6 bg-[#050505] border-[#800f49] border-4 rounded-lg shadow-md md:flex-row">
+        <img className="object-cover w-fit mt-4 h-96 rounded-lg md:ml-2 md:my-2 md:h-auto md:w-48 transform transition duration-500 hover:scale-105" src={`${process.env.PUBLIC_URL}/assets/images/${props.img}`} alt="" />
+        <div className="flex flex-col justify-between p-4 leadng-normal">
+            <div className="font-bold text-xl md:text-2xl mb-2 text-[#e6873f]">{props.title}</div>
+            <p className="mb-2 text-sm md:text-base text-[#ffd68e]">{props.content}</p>
+            <p className="mb-2 font-semibold text-sm md:text-base text-[#e6873f]">{props.publisher}</p>
             <div className="space-x-4">
                 {props.git !== undefined &&
                     <a href={props.git} target="_blank">
-                        <i class="fab fa-github text-gray-500 text-2xl hover:text-[#d52158] transition ease-in-out duration-300"></i>
+                        <i className="fab fa-github text-gray-500 text-2xl hover:text-[#d52158] transition ease-in-out duration-300"></i>
                     </a>
                 }
                 {props.link !== undefined &&
                     <a href={props.link} target="_blank">
-                        <i class="fas fa-link text-gray-500 text-2xl hover:text-[#d52158] transition ease-in-out duration-300"></i>
+                        <i className="fas fa-link text-gray-500 text-2xl hover:text-[#d52158] transition ease-in-out duration-300"></i>
                     </a>
                 }
         </div>

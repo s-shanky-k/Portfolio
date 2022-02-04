@@ -5,6 +5,7 @@ import MusicSection from '../components/MusicSection';
 import PhotoSection from '../components/PhotoSection';
 import ProjectsSection from '../components/ProjectsSection';
 import PublicationsSection from '../components/PublicationsSection';
+import ResumeSection from '../components/ResumeSection';
 import SkillsSection from '../components/SkillsSection';
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
     <SkillsSection />
     <PhotoSection />
     <MusicSection />
+    <ResumeSection />
     </>
   );
 }
