@@ -7,9 +7,7 @@ import { useState } from "react";
 
 function PhotoSection() {
     const [width, setWidth] = useState(window.innerWidth);
-    const handleWindowResize = () => { setWidth(window.innerWidth);
-        console.log(width)
-        }
+    const handleWindowResize = () => setWidth(window.innerWidth);
 
     window.addEventListener("resize", handleWindowResize);
 
@@ -40,7 +38,7 @@ function PhotoSection() {
                         </>
                     }
 
-                    { width < 768 & width >= 640 &&
+                    { (width<768 && width>=640) &&
                         <PhotoContainer props={{img:"pic.jpeg"}}/>
                     }
                 </div>             
