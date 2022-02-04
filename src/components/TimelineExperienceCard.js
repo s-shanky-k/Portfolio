@@ -12,7 +12,7 @@ function TimelineExperienceCard({props}) {
         </div>
         <div className="flex text-base items-center mb-1 font-normal text-white">{props.role}</div>
         <div className="mb-4 text-sm font-normal text-gray-400 space-x-2">
-            <i class="fas fa-map-marker-alt"></i>
+            <i className="fas fa-map-marker-alt"></i>
             <span>{props.location}</span>
         </div>
     </>

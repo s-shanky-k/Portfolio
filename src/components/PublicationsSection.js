@@ -6,8 +6,8 @@ function PublicationsSection() {
   return (
         <div className="publications-container" id="publications">
             <div className="publications-title">
-                <i className="material-icons-outlined">audiotrack</i>
-                <h1>Music</h1>
+                <i className="material-icons-outlined">library_books</i>
+                <h1>Publications</h1>
             </div>
             <div className="publications-content">
                 <div className="publications-text">

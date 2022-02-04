@@ -14,7 +14,7 @@ function SkillsSection() {
                     This what I am listening to now!
                 </div>
                 {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 px-2 pt-4"> */}
-                <div class="w-full gap-5 flex-wrap flex justify-center items-center px-2 pt-4">
+                <div className="w-full gap-5 flex-wrap flex justify-center items-center px-2 pt-4">
                     <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
                     <SkillsCard props={{img:'pic-wf.png', title:"Machine Learning", skills:"Scikit/Tensorflow"}}/>
                     <SkillsCard props={{img:'pic-wf.png', title:"Web Development", skills:"HTML/CSS/React"}}/>

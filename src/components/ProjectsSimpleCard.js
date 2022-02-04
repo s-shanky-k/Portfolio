@@ -33,12 +33,12 @@ function ProjectsSimpleCard({props}) {
             <div className="mt-2">
                     {props.git !== undefined &&
                         <a href={props.git} target="_blank">
-                            <i class="fab fa-github text-gray-500 text-2xl px-2 hover:text-[#d52158] transition ease-in-out duration-300"></i>
+                            <i className="fab fa-github text-gray-500 text-2xl px-2 hover:text-[#d52158] transition ease-in-out duration-300"></i>
                         </a>
                     }
                     {props.link !== undefined &&
                         <a href={props.link} target="_blank">
-                            <i class="fas fa-link text-gray-500 text-2xl px-2 hover:text-[#d52158] transition ease-in-out duration-300"></i>
+                            <i className="fas fa-link text-gray-500 text-2xl px-2 hover:text-[#d52158] transition ease-in-out duration-300"></i>
                         </a>
                     }
             </div>
