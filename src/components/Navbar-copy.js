@@ -53,15 +53,15 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="certificates" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
+                    <Link className='nav-links' to="certifications" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
                     <i className="material-icons-outlined">emoji_events</i>
                     <span className='nav-title'>Achievements</span>
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="certificates" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
+                    <Link className='nav-links' to="certifications" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
                     <i className="material-icons-outlined">verified_user</i>
-                    <span className='nav-title'>Certificates</span>
+                    <span className='nav-title'>Certifications</span>
                     </Link>
                 </li>
                 <li className='nav-item'>
