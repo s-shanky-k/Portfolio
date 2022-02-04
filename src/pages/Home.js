@@ -4,6 +4,7 @@ import ExpEduSection from '../components/ExpEduSection';
 import MusicSection from '../components/MusicSection';
 import PhotoSection from '../components/PhotoSection';
 import ProjectsSection from '../components/ProjectsSection';
+import PublicationsSection from '../components/PublicationsSection';
 import SkillsSection from '../components/SkillsSection';
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
     <AboutMeSection />
     <ExpEduSection />
     <ProjectsSection />
+    <PublicationsSection />
     <SkillsSection />
     <PhotoSection />
     <MusicSection />

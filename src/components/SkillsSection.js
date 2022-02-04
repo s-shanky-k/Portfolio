@@ -18,15 +18,15 @@ function SkillsSection() {
                     <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
                     <SkillsCard props={{img:'pic-wf.png', title:"Machine Learning", skills:"Scikit/Tensorflow"}}/>
                     <SkillsCard props={{img:'pic-wf.png', title:"Web Development", skills:"HTML/CSS/React"}}/>
+                    <SkillsCard props={{img:'java.svg', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'python.svg', title:"Language", skills:"Java"}}/>
                     <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
                     <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
                     <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'html.svg', title:"Language", skills:"Java"}}/>
                     <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
                     <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
-                    <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
+                    <SkillsCard props={{img:'javascript.svg', title:"Language", skills:"Java"}}/>
                     <SkillsCard props={{img:'pic-wf.png', title:"Language", skills:"Java"}}/>
                 </div>
             </div>
