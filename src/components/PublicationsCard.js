@@ -11,7 +11,7 @@ import React from 'react';
 function PublicationsCard({props}) {
   return (
     <div className="flex flex-col items-center w-5/6 bg-[#050505] border-[#800f49] border-4 rounded-lg shadow-md md:flex-row">
-        <img className="object-cover w-fit mt-4 h-96 rounded-lg md:ml-2 md:my-2 md:h-auto md:w-48 transform transition duration-500 hover:scale-105" src={`${process.env.PUBLIC_URL}/assets/images/${props.img}`} alt="" />
+        <img className="object-cover w-fit mt-4 h-96 rounded-lg md:ml-2 md:my-2 md:h-auto md:w-48 transform transition duration-500 md:hover:scale-105" src={`${process.env.PUBLIC_URL}/assets/images/${props.img}`} alt="" />
         <div className="flex flex-col justify-between p-4 leadng-normal">
             <div className="font-bold text-xl md:text-2xl mb-2 text-[#e6873f]">{props.title}</div>
             <p className="mb-2 text-sm md:text-base text-[#ffd68e]">{props.content}</p>
