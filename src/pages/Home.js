@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutMeSection from '../components/AboutMeSection'
 import CertAchSection from '../components/CertAchSection';
+import ContactSection from '../components/ContactSection';
 import ExpEduSection from '../components/ExpEduSection';
 import MusicSection from '../components/MusicSection';
 import PhotoSection from '../components/PhotoSection';
@@ -18,9 +19,10 @@ function Home() {
     <PublicationsSection />
     <SkillsSection />
     <CertAchSection />
+    <ResumeSection />
     <PhotoSection />
     <MusicSection />
-    <ResumeSection />
+    <ContactSection />
     </>
   );
 }

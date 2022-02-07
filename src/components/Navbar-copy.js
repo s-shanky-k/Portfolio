@@ -65,6 +65,12 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
+                    <Link className='nav-links' to="resume" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
+                    <i className="material-icons-outlined">insert_drive_file</i>
+                    <span className='nav-title'>Resume</span>
+                    </Link>
+                </li>
+                <li className='nav-item'>
                     <Link className='nav-links' to="photography" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
                     <i className="material-icons-outlined">photo_camera</i>
                     <span className='nav-title'>Photography</span>
@@ -74,12 +80,6 @@ function Navbar() {
                     <Link className='nav-links' to="music" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
                     <i className="material-icons-outlined">audiotrack</i>
                     <span className='nav-title'>Music</span>
-                    </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link className='nav-links' to="resume" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
-                    <i className="material-icons-outlined">insert_drive_file</i>
-                    <span className='nav-title'>Resume</span>
                     </Link>
                 </li>
                 <li className='nav-item'>
