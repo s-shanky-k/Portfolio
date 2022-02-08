@@ -13,29 +13,6 @@
     object-fit: contain;
 }
 
-/* .landing-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    padding: 0 1rem;
-    margin-top: 46px;
-    
-}
-
-.landing-title h1{
-    color: #05d5ba;
-    font-size: 20px;
-    margin-left: 7px;
-} */
-
-/* .landing-title .material-icons-outlined {
-    padding-top: 0px;
-    color: #05d5ba;
-    font-size: 24px;
-} */
-
 .landing-content{
     height: 100%;
     width: 100%;
@@ -57,26 +34,6 @@
     align-items: flex-start;
     justify-content: center;
     color: #DDDDDD;
-}
-
-/* .landing-img{
-    height: 60%;
-    width: 50%;
-} */
-
-.landing-graphic-container{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #DDDDDD;
-    overflow: hidden;
-}
-
-.graphic{
-    height: 100%;
-    width: 100%;
 }
 
 .small-heading {
@@ -102,18 +59,18 @@
 @media screen and (max-width: 1024px) {
     .landing-container{
         height: 100vh;
+        width: 100%;
         z-index: 1;
-        width: 100vw;
-        /* margin-top: -75px; */
         padding-top: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
         background-color: #121212;
         object-fit: contain;
     }
+
     .landing-content{
         height: 100%;
         width: 100%;
@@ -127,21 +84,21 @@
     }
 
     .landing-text{
-        width: 40%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .landing-graphic-container{
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #DDDDDD;
+        padding: 0;
+    }
+
+    .small-heading {
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .big-heading{
+        font-size: 4.5rem;
     }
 }
 
@@ -149,24 +106,31 @@
 @media screen and (max-width: 640px) {
 
     .landing-text{
-        width: 70%;
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0rem;
+        position: absolute;
     }
+
     .landing-img{
         height: 100%;
         width: 100%;
     }
 
-    .landing-graphic-container{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: #DDDDDD;
+    .small-heading {
+        font-size: 1rem;
+    }
+
+    .big-heading{
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
+
+    .code {
+        font-size: small;
+        line-height: 1.5rem;
     }
 }

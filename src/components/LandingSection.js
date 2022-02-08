@@ -1,5 +1,6 @@
 import React from 'react';
 import './LandingSection.css'
+import { ReactComponent as Diamond } from './assets/diamond.svg';
 
 function LandingSection() {
   return (
@@ -16,9 +17,10 @@ function LandingSection() {
                         <div>];</div>
                     </div>
                 </div>
-                {/* <div className="landing-graphic-container"> */}
-                <img src={`${process.env.PUBLIC_URL}/assets/images/diamond.svg`} alt="Picture" className='animate-spin-slow h-full -mr-72' />
-                {/* </div> */}
+                <div className="w-full overflow-hidden absolute lg:invisible">
+                    <Diamond className='animate-spin-slow fill-[#d52158] opacity-20 mix-blend-screen'/>
+                </div>
+                <Diamond className='animate-spin-vslow h-0 w-0 -mr-96 fill-[#d52158] lg:w-full lg:h-full'/>
             </div>
         </div>
   );
