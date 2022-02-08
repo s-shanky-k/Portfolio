@@ -21,7 +21,7 @@ function PhotoSection() {
                 <div className="photos-text">
                     These are my photos
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 pt-5 pr-5 pl-5">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 py-5 pr-5 pl-5">
                     <PhotoContainer props={{img:"pic1.jpg"}}/>
                     <PhotoContainer props={{img:"pic1.jpg"}}/>
                     <PhotoContainer props={{img:"pic.jpeg"}}/>

@@ -2,8 +2,8 @@
     height: fit-content;
     z-index: 1;
     width: 100%;
-    padding-top: 5px;
-    /* margin-top: -45px; */
+    /* padding-top: 5px; */
+    /* padding-bottom: 5px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +20,7 @@
     align-items: center;
     width: 100%;
     padding: 0px 1rem;
-    margin-top: 46px;
+    margin-top: 50px;
 }
 
 .skills-title h1{
