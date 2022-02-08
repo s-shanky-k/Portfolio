@@ -1,4 +1,5 @@
 import React from 'react';
+import LandingSection from '../components/LandingSection'
 import AboutMeSection from '../components/AboutMeSection'
 import CertAchSection from '../components/CertAchSection';
 import ContactSection from '../components/ContactSection';
@@ -13,6 +14,7 @@ import SkillsSection from '../components/SkillsSection';
 function Home() {
   return (
     <>
+    <LandingSection />
     <AboutMeSection />
     <ExpEduSection />
     <ProjectsSection />

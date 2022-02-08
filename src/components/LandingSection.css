@@ -1,9 +1,9 @@
-.aboutme-container{
+.landing-container{
     height: 100vh;
     z-index: 1;
     width: 100%;
-    /* margin-top: -48px; */
-    /* padding-top: 5px; */
+    margin-top: -45px;
+    padding-top: 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,29 +13,30 @@
     object-fit: contain;
 }
 
-.aboutme-title {
+/* .landing-title {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
     padding: 0 1rem;
-    margin-top: 50px;
+    margin-top: 46px;
+    
 }
 
-.aboutme-title h1{
+.landing-title h1{
     color: #05d5ba;
     font-size: 20px;
     margin-left: 7px;
-}
+} */
 
-.aboutme-title .material-icons-outlined {
+/* .landing-title .material-icons-outlined {
     padding-top: 0px;
     color: #05d5ba;
     font-size: 24px;
-}
+} */
 
-.aboutme-content{
+.landing-content{
     height: 100%;
     width: 100%;
     display: flex;
@@ -47,36 +48,62 @@
     object-fit: contain;
 }
 
-.aboutme-img-container{
-    width: 40%;
+.landing-text{
+    width: 100%;
     height: 100%;
     padding: 2.5rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
+    color: #DDDDDD;
 }
 
-.aboutme-img{
+/* .landing-img{
     height: 60%;
     width: 50%;
-}
+} */
 
-.aboutme-text{
-    width: 60%;
+.landing-graphic-container{
+    width: 30%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #DDDDDD
+    color: #DDDDDD;
+    overflow: hidden;
+}
+
+.graphic{
+    height: 100%;
+    width: 100%;
+}
+
+.small-heading {
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.big-heading {
+    color: #05d5ba;
+    font-size: 5rem;
+    line-height: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    line-height: 2rem;
 }
 
 
 @media screen and (max-width: 1024px) {
-    .aboutme-container{
-        height: fit-content;
+    .landing-container{
+        height: 100vh;
         z-index: 1;
-        width: 100%;
+        width: 100vw;
         margin-top: -75px;
         padding-top: 0px;
         display: flex;
@@ -87,7 +114,7 @@
         background-color: #121212;
         object-fit: contain;
     }
-    .aboutme-content{
+    .landing-content{
         height: 100%;
         width: 100%;
         display: flex;
@@ -99,7 +126,7 @@
         object-fit: contain;
     }
 
-    .aboutme-img-container{
+    .landing-text{
         width: 40%;
         height: 100%;
         display: flex;
@@ -107,7 +134,7 @@
         justify-content: center;
     }
 
-    .aboutme-text{
+    .landing-graphic-container{
         width: 100%;
         height: 100%;
         display: flex;
@@ -121,18 +148,19 @@
 
 @media screen and (max-width: 640px) {
 
-    .aboutme-img-container{
+    .landing-text{
         width: 70%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .aboutme-img{
+    .landing-img{
         height: 100%;
         width: 100%;
     }
-    .aboutme-text{
+
+    .landing-graphic-container{
         width: 100%;
         height: 100%;
         display: flex;

@@ -23,13 +23,13 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="experience" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={-10} activeClass='active'>
+                    <Link className='nav-links' to="experience" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
                     <i className="material-icons-outlined">work</i>
                     <span className='nav-title'>Experience</span>
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link className='nav-links' to="education" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={-10} activeClass='active'>
+                    <Link className='nav-links' to="education" onClick={closeMobileMenu} smooth={true} duration={500} spy={true} exact='true' offset={0} activeClass='active'>
                     <i className="material-icons-outlined">school</i>
                     <span className='nav-title'>Education</span>
                     </Link>
