@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Fade from 'react-reveal'
 // Example:
 // <PublicationsCard props={{title:"Ensemble and Multi Model approach to Environmental Sound Classification",
 //                                             content:"This is the content where I will talk about the paper",
@@ -10,6 +10,7 @@ import React from 'react';
 
 function PublicationsCard({props}) {
   return (
+      <Fade bottom>
     <div className="flex flex-col items-center w-5/6 bg-[#050505] border-[#800f49] border-4 rounded-lg shadow-md md:flex-row">
         <img className="object-cover w-fit mt-4 h-96 rounded-lg md:ml-2 md:my-2 md:h-auto md:w-48 transform transition duration-500 md:hover:scale-105" src={`${process.env.PUBLIC_URL}/assets/images/${props.img}`} alt="" />
         <div className="flex flex-col justify-between p-4 leadng-normal">
@@ -31,6 +32,7 @@ function PublicationsCard({props}) {
         </div>
 
     </div>
+    </Fade>
   );
 }
 
