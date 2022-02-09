@@ -55,6 +55,11 @@
     line-height: 2rem;
 }
 
+.social-media {
+    margin-top: 2rem;
+    width: 8.5rem;
+}
+
 
 @media screen and (max-width: 1024px) {
     .landing-container{

@@ -1,6 +1,7 @@
 import React from 'react';
 import './LandingSection.css'
 import { ReactComponent as Diamond } from './assets/diamond.svg';
+import SocialMedia from './SocialMedia';
 
 function LandingSection() {
   return (
@@ -15,6 +16,9 @@ function LandingSection() {
                         <div className='pl-6'><span className='text-red-500'>Developer</span>, <span className='text-red-500'>Researcher</span>, <span className='text-red-500'>Photographer</span>, <span className='text-red-500'>Gamer</span></div>
                         <div className='pl-6'><span className='text-red-500'>Sugar</span>, <span className='text-red-500'>Spice</span>, ...<span className='text-red-500'>everythingNice</span></div>
                         <div>];</div>
+                    </div>
+                    <div className="social-media">
+                        <SocialMedia />
                     </div>
                 </div>
                 <div className="w-full overflow-hidden absolute lg:invisible">

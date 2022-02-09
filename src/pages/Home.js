@@ -10,6 +10,7 @@ import ProjectsSection from '../components/ProjectsSection';
 import PublicationsSection from '../components/PublicationsSection';
 import ResumeSection from '../components/ResumeSection';
 import SkillsSection from '../components/SkillsSection';
+import FooterSection from '../components/FooterSection';
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
     <PhotoSection />
     <MusicSection />
     <ContactSection />
+    <FooterSection />
     </>
   );
 }
