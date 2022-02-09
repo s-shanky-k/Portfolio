@@ -1,6 +1,7 @@
 import React from 'react';
 import TimelineExperienceCard from './TimelineExperienceCard';
 import TimelineEducationCard from './TimelineEducationCard';
+import Fade from 'react-reveal/Fade';
 
 function Timeline({props}) {
   return (
@@ -38,23 +39,27 @@ function Timeline({props}) {
         </li> */}
         {(props.type === 'experience') &&
             props.experience.map((item, index) =>  
+            <Fade top>
                 <li className="mb-8 ml-6" key={index+1}>            
-                    <span className="flex absolute -left-3 justify-center items-center w-5 h-5 rounded-full ring-8 ring-[#410825] bg-[#800f49]">
+                    <span className="flex absolute -left-9 justify-center items-center w-5 h-5 rounded-full ring-8 ring-[#410825] bg-[#800f49]">
                         <i className="text-xs text-[#ed016a] fas fa-circle"></i>
                     </span>
                     <TimelineExperienceCard  props={{name:item.name, img:item.img, role:item.role, startDate:item.startDate, endDate:item.endDate, location:item.location}}/>
                 </li>
+            </Fade>
             )
         }
         
         {(props.type === 'education') && 
             props.education.map((item, index) =>
+            <Fade top>
             <li className="mb-8 ml-6" key={index+1}>            
-                <span className="flex absolute -left-3 justify-center items-center w-5 h-5 rounded-full ring-8 ring-[#410825] bg-[#800f49]">
+                <span className="flex absolute -left-9 justify-center items-center w-5 h-5 rounded-full ring-8 ring-[#410825] bg-[#800f49]">
                     <i className="text-xs text-[#ed016a] fas fa-circle"></i>
                 </span>
                 <TimelineEducationCard props={{name:item.name, img:item.img, domain:item.domain, startDate:item.startDate, endDate:item.endDate}}/>
             </li>
+            </Fade>
             )
         }
 

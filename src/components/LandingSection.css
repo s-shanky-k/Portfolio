@@ -50,16 +50,24 @@
 }
 
 .code {
+    position: absolute;
+    width: max-content;
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
     line-height: 2rem;
+    margin-top: 0.2rem;
 }
 
 .social-media {
-    margin-top: 2rem;
+    position: absolute;
+    margin-top: 18.3rem;
     width: 8.5rem;
 }
 
+.heading {
+    position: absolute;
+    margin-top: -10rem;
+}
 
 @media screen and (max-width: 1024px) {
     .landing-container{
@@ -104,6 +112,18 @@
 
     .big-heading{
         font-size: 4.5rem;
+    }
+    .code {
+        position: relative;
+        margin-top: 0;
+    }
+    .heading {
+        position: relative;
+        margin-top: 0;
+    }
+    .social-media{
+        position: relative;
+        margin-top: 0;
     }
 }
 
