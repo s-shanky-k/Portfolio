@@ -11,7 +11,7 @@ function FooterSection() {
                     <div className='w-40 mt-2'>
                       <SocialMedia />
                     </div>
-                    <p className='text-xs mt-2 text-gray-600'>Copyright <i class="far fa-copyright text-xs"></i> 2022 Shankar Kumar S</p>
+                    <p className='text-xs mt-2 text-gray-600'>Copyright <i className="far fa-copyright text-xs"></i> 2022 Shankar Kumar S</p>
                 </div>
         </div>
   );

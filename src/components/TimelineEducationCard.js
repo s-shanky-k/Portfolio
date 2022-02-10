@@ -20,7 +20,7 @@ function TimelineEducationCard({props}) {
             <i className="fas fa-info-circle float-right text-base text-[#d52158] hover:cursor-pointer" onClick={toggleMoreInfo}></i>
           }
           {moreInfo &&
-            <i class="fas fa-times-circle float-right text-base text-[#d52158] hover:cursor-pointer" onClick={toggleMoreInfo}></i>
+            <i className="fas fa-times-circle float-right text-base text-[#d52158] hover:cursor-pointer" onClick={toggleMoreInfo}></i>
           }
         </div>
 

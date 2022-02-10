@@ -15,7 +15,7 @@ function MusicSection() {
                 </div>
                 <Fade bottom>
                     <div className="music-spotify">
-                        <iframe src="https://open.spotify.com/embed/playlist/0g7B25IgddhKE8wb0OgO0e?utm_source=generator&theme=0" width="90%" height="100%" frameBorder="0"  style={{borderRadius: "6px"}} allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe src="https://open.spotify.com/embed/playlist/0g7B25IgddhKE8wb0OgO0e?utm_source=generator&theme=0" width="90%" height="100%" frameBorder="0"  style={{borderRadius: "6px"}} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                     </div>
                 </Fade>
             </div>

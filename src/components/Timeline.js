@@ -9,8 +9,8 @@ function Timeline({props}) {
     <ol className="relative border-l-4 border-gray-700 my-5 ml-7 w-10/12 lg:w-9/12">     
         {(props.type === 'experience') &&
             props.experience.map((item, index) =>  
-            <Fade top>
-                <li className="mb-8 ml-6" key={index+1}>            
+            <Fade top key={index+1}>
+                <li className="mb-8 ml-6" >            
                     <span className="flex absolute -left-9 justify-center items-center w-5 h-5 rounded-full ring-8 ring-[#410825] bg-[#800f49]">
                         <i className="text-xs text-[#ed016a] fas fa-circle"></i>
                     </span>
@@ -22,8 +22,8 @@ function Timeline({props}) {
         
         {(props.type === 'education') && 
             props.education.map((item, index) =>
-            <Fade top>
-            <li className="mb-8 ml-6" key={index+1}>            
+            <Fade top key={index+1}>
+            <li className="mb-8 ml-6">            
                 <span className="flex absolute -left-9 justify-center items-center w-5 h-5 rounded-full ring-8 ring-[#410825] bg-[#800f49]">
                     <i className="text-xs text-[#ed016a] fas fa-circle"></i>
                 </span>

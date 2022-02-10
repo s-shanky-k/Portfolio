@@ -37,17 +37,17 @@ function ContactSection() {
                 </div>
                 <div className="contact-form">
                     <form className='w-full' onSubmit={sendEmail}>
-                        <div class="mb-6">
-                            <label for="name" class="block mb-2 text-base font-medium text-white">Full Name</label>
-                            <input type="text" id="name" name="name" class="text-base rounded-sm block w-72 p-2.5 border bg-[#121212] border-[#800f49] placeholder-gray-400 text-white" placeholder="Name" required />
+                        <div className="mb-6">
+                            <label className="block mb-2 text-base font-medium text-white">Full Name</label>
+                            <input type="text" id="name" name="name" className="text-base rounded-sm block w-72 p-2.5 border bg-[#121212] border-[#800f49] placeholder-gray-400 text-white" placeholder="Name" required />
                         </div>
-                        <div class="mb-6">
-                            <label for="email" class="block mb-2 text-base font-medium text-white">Email Address</label>
-                            <input type="email" id="email" name="email" class="text-base rounded-sm block w-72 p-2.5 border bg-[#121212] border-[#800f49] placeholder-gray-400 text-white" placeholder="name@example.com" required />
+                        <div className="mb-6">
+                            <label  className="block mb-2 text-base font-medium text-white">Email Address</label>
+                            <input type="email" id="email" name="email" className="text-base rounded-sm block w-72 p-2.5 border bg-[#121212] border-[#800f49] placeholder-gray-400 text-white" placeholder="name@example.com" required />
                         </div>
-                        <div class="mb-6">
-                            <label for="message" class="block mb-2 text-base font-medium text-white">Message</label>
-                            <textarea type="text" id="message" name="message" class="text-base rounded-sm block h-28 w-full md:w-3/5 lg:w-2/5 p-2.5 border bg-[#121212] border-[#800f49] placeholder-gray-400 text-white" placeholder="Your Message" required />
+                        <div className="mb-6">
+                            <label className="block mb-2 text-base font-medium text-white">Message</label>
+                            <textarea type="text" id="message" name="message" className="text-base rounded-sm block h-28 w-full md:w-3/5 lg:w-2/5 p-2.5 border bg-[#121212] border-[#800f49] placeholder-gray-400 text-white" placeholder="Your Message" required />
                         </div>
                         <button type="submit"><Button props={{text:"Send Message"}}/></button>
                     </form>
