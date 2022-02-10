@@ -19,7 +19,6 @@ function Navbar() {
         else{
             setOffsetVal(-20);
         }
-        console.log(offsetVal);
     };
 
     window.addEventListener("resize", handleWindowResize);
