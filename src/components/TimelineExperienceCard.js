@@ -4,7 +4,12 @@ import Fade from 'react-reveal/Fade';
 function TimelineExperienceCard({props}) {
 
   const [moreInfo, setMoreInfo] = useState(false);
-  const toggleMoreInfo = () => setMoreInfo(!moreInfo);
+  const toggleMoreInfo = () => {
+    setMoreInfo(!moreInfo);
+    setTimeout(() => {
+      
+    },1000);
+  }
 
   return (
     <>
@@ -28,7 +33,7 @@ function TimelineExperienceCard({props}) {
         </div>
 
         {moreInfo &&
-        <Fade top>
+        <Fade left>
           <div className="mb-3 text-sm font-normal text-white ">
             {props.duties.map((item, index) => 
               <div className='mb-1 space-x-2'>

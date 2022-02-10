@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import './LandingSection.css'
 import { ReactComponent as Diamond } from './assets/diamond.svg';
 import SocialMedia from './SocialMedia';
@@ -6,6 +6,26 @@ import Fade from 'react-reveal/Fade';
 import Typist from 'react-typist';
 
 function LandingSection() {
+    // const [width, setWidth] = useState(window.innerWidth);
+    const [animationDelay, setAnimationDelay] = useState (2000);
+
+    // const handleAnimationDelay = () => {
+    //     setWidth(window.innerWidth);
+    //     if(width<=1024){
+    //         setAnimationDelay(0);
+    //     }
+    //     else{
+    //         setAnimationDelay(2000);
+    //     }
+    // }
+
+    // useLayoutEffect(() => {
+    //     handleAnimationDelay()
+    // },[])
+
+    // window.addEventListener("load", handleAnimationDelay);
+    // window.addEventListener("resize", handleAnimationDelay);
+
   return (
         <div className="landing-container" id="landing">
 
@@ -13,15 +33,15 @@ function LandingSection() {
                 
                 <div className="landing-text">
                     <div className="heading">
-                        <Fade bottom delay={2100}>
+                        <Fade bottom delay={animationDelay+100}>
                         <div className='small-heading'>Hey! My name is</div>
                         </Fade>
-                        <Fade bottom delay={2200}>
+                        <Fade bottom delay={animationDelay+200}>
                         <div className='big-heading'>Shankar Kumar S</div>
                         </Fade>
                     </div>
-                    <Fade bottom delay={2300}>
-                    <Typist startDelay={2600} avgTypingDelay={25} cursor={{show: false,}}>
+                    <Fade bottom delay={animationDelay+300}>
+                    <Typist startDelay={animationDelay+600} avgTypingDelay={25} cursor={{show: false,}}>
                     <div className='code'>
                         <div><span className='text-blue-600'>const</span> <span>shankar</span>: <span>Array</span>&lt;<span className='text-green-400'>Ingredient</span>&gt; <span className='text-blue-600'>=</span> [</div>
                         <div className='pl-6'><span className='text-red-500'>Developer</span>, <span className='text-red-500'>Researcher</span>, <span className='text-red-500'>Photographer</span>, <span className='text-red-500'>Gamer</span></div>
@@ -30,7 +50,7 @@ function LandingSection() {
                     </div>
                     </Typist>
                     </Fade>
-                    <Fade bottom delay={6000}>
+                    <Fade bottom delay={animationDelay+4000}>
                     <div className="social-media">
                         <SocialMedia />
                     </div>

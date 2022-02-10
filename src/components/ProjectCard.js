@@ -139,8 +139,8 @@ function ProjectCard({props}) {
                     }
                 </div>
             </div>
-            <div className="w-4/6 md:w-2/4 bg-cover bg-center shadow-lg rounded-lg -ml-52 md:-ml-16">
-                <img src={`${process.env.PUBLIC_URL}/assets/images/` + `${props.img}`} alt="" className="w-full h-full rounded-lg" />
+            <div className="w-4/6 md:w-2/4 shadow-lg rounded-lg -ml-52 md:-ml-16">
+                <img src={`${process.env.PUBLIC_URL}/assets/images/` + `${props.img}`} alt="" className="w-full h-full object-center object-cover rounded-lg" />
             </div>
             
         </div>
@@ -150,8 +150,8 @@ function ProjectCard({props}) {
         {props.type === 'right' &&
         <Fade bottom>
         <div className="flex items-stretch w-5/6 justify-center my-12">
-            <div className="w-4/6 md:w-2/4 bg-cover bg-center shadow-lg rounded-lg -mr-52 md:-mr-16">
-                <img src={`${process.env.PUBLIC_URL}/assets/images/` + `${props.img}`} alt="" className="w-full h-full rounded-lg" />
+            <div className="w-4/6 md:w-2/4 shadow-lg rounded-lg -mr-52 md:-mr-16">
+                <img src={`${process.env.PUBLIC_URL}/assets/images/` + `${props.img}`} alt="" className="w-full h-full object-center object-cover rounded-lg" />
             </div>
             <div className="flex flex-col w-full md:w-2/4 text-right justify-center">
                 <div className="text-[#e6873f] p-0 mb-2 mt-6 w-full !z-0">

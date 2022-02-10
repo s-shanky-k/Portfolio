@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PhotoContainer from './PhotoContainer';
 import './PhotoSection.css'
-import { useState } from 'react';
 import Modal from './Modal.js'
 
 // 1024 - 4

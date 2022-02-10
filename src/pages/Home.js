@@ -13,6 +13,7 @@ import SkillsSection from '../components/SkillsSection';
 import FooterSection from '../components/FooterSection';
 
 function Home() {
+
   return (
     <>
     <LandingSection />
