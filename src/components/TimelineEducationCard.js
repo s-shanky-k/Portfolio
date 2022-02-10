@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 
 function TimelineEducationCard({props}) {
+
   const [moreInfo, setMoreInfo] = useState(false);
   const toggleMoreInfo = () => setMoreInfo(!moreInfo);
+
   return (
     <>
         <div className='w-28 h-12 mb-2'>
@@ -25,14 +27,12 @@ function TimelineEducationCard({props}) {
         {moreInfo &&
           <Fade top>
             <div className="mb-3 text-sm font-normal text-white ">
+            {props.achievements.map((item, index) =>
               <div className='mb-1 space-x-2'>
-                <i className="fas fa-bahai text-xs"></i>
-                <span>Designed and developed an unsupervised machine learning model to identify location-based fraud transactions</span>
+                <i className="fas fa-bahai text-xs text-[#d52158]"></i>
+                <span key={index+1}>{item}</span>
               </div>
-              <div className='mb-1 space-x-2'>
-                <i className="fas fa-bahai text-xs"></i>
-                <span>Used Pyspark to perform distributed data processing, model training and prediction.</span>
-              </div>
+            )}
             </div>
           </Fade>
         }
