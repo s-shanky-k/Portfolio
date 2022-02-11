@@ -1,92 +1,89 @@
-.expedu-container{
-    height: fit-content;
-    /* z-index: 1; */
-    width: 100%;
-    /* padding-top: 5px; */
-    /* margin-top: -48px; */
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: flex-start;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-    background-color: #121212;
-    object-fit: contain;
+.expedu-container {
+	height: fit-content;
+	/* z-index: 1; */
+	width: 100%;
+	/* padding-top: 5px; */
+	/* margin-top: -48px; */
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: flex-start;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+	background-color: var(--theme-bg-color);
+	object-fit: contain;
 }
 
 .expedu-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    padding: 0 1rem;
-    margin-top: 50px;
-    
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 0 1rem;
+	margin-top: 50px;
 }
 
-.expedu-title h1{
-    color: #05d5ba;
-    font-size: 20px;
-    margin-left: 7px;
+.expedu-title h1 {
+	color: var(--theme-cyan);
+	font-size: 20px;
+	margin-left: 7px;
 }
 
 .expedu-title .material-icons-outlined {
-    padding-top: 0px;
-    color: #05d5ba;
-    font-size: 24px;
+	padding-top: 0px;
+	color: var(--theme-cyan);
+	font-size: 24px;
 }
 
-.expedu-education{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+.expedu-education {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
-.expedu-experience{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+.expedu-experience {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
-
 
 @media screen and (max-width: 768px) {
-    
-    .expedu-container{
-        height: fit-content;
-        /* z-index: 1; */
-        width: 100%;
-        margin-top: 0px;
-        padding-top: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-        background-color: #121212;
-        object-fit: contain;
-    }
+	.expedu-container {
+		height: fit-content;
+		/* z-index: 1; */
+		width: 100%;
+		margin-top: 0px;
+		padding-top: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+		background-color: var(--theme-bg-color);
+		object-fit: contain;
+	}
 
-    .expedu-education{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
+	.expedu-education {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
 
-    .expedu-experience{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
+	.expedu-experience {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
 }

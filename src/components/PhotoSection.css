@@ -1,61 +1,58 @@
-.photos-container{
-    height: fit-content;
-    z-index: 1;
-    width: 100%;
-    /* padding-top: 5px; */
-    /* margin-top: -45px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-    background-color: #121212;
-    object-fit: contain;
+.photos-container {
+	height: fit-content;
+	z-index: 1;
+	width: 100%;
+	/* padding-top: 5px; */
+	/* margin-top: -45px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+	background-color: var(--theme-bg-color);
+	object-fit: contain;
 }
 
 .photos-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    padding: 0 1rem;
-    margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 0 1rem;
+	margin-top: 50px;
 }
 
-.photos-title h1{
-    color: #05d5ba;
-    font-size: 20px;
-    margin-left: 7px;
+.photos-title h1 {
+	color: var(--theme-cyan);
+	font-size: 20px;
+	margin-left: 7px;
 }
 
 .photos-title .material-icons-outlined {
-    padding-top: 0px;
-    color: #05d5ba;
-    font-size: 24px;
+	padding-top: 0px;
+	color: var(--theme-cyan);
+	font-size: 24px;
 }
 
-.photos-content{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-    background-color: #121212;
-    object-fit: contain;
+.photos-content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+	background-color: var(--theme-bg-color);
+	object-fit: contain;
 }
 
-.photos-text{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: #DDDDDD;
-    padding: 0 1rem;
+.photos-text {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: var(--theme-primary-font-color);
+	padding: 0 1rem;
 }
-
-
-
