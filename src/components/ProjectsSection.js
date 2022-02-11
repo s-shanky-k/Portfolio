@@ -24,7 +24,7 @@ function ProjectsSection() {
                 <ProjectCard props={{img: "pic1.jpg", link:"https://brittanychiang.com/", title:"Boom3", content:["Boom this is sik hndfi uhweiash nfasdncfja nuicnawencqnc", "ioqnnce jowqnof ncqoijeif jhaKLMCMAIJ FQEOIWJF IONE",  "ioqnnc ejowqnofnc qoijeifjh aKLMCMAIJF QEOIWJFIONE"], skills:["Javascript", "Python"], type:"left",  git:"https://github.com/s-shanky-k"}}/>
 
                 {!showMore &&
-                    <button className="text-[#05d5ba] text-xl inline-block animate-bounce" onClick={handleShowMore}>
+                    <button className="text-theme-cyan text-xl inline-block animate-bounce" onClick={handleShowMore}>
                         <span className='block'>Other Projects</span>
                         <i className="fas fa-angle-down text-3xl "></i>
                     </button>
@@ -41,7 +41,7 @@ function ProjectsSection() {
                         <ProjectsSimpleCard props={{img: "pic1.jpg", title:"Boom2", content:["Boom this is sikhndfi uhweiash nfasdn cfjanu icnaw encqnc", "ioqn ncejowq nofn cqoijeifjh aKLMCMAIJFQ EOIWJFIONE",  "ioqnnce jowqnofnc qoijeifjhaKL MCMAIJFQEOI WJFIONE"], skills:["Java", "Python"], git:"https://github.com/s-shanky-k"}}/>
                         <ProjectsSimpleCard props={{img: "pic1.jpg", link:"https://brittanychiang.com/", title:"Boom3", content:["Boom this is sik hndfi uhweiash nfasdncfja nuicnawencqnc", "ioqnnce jowqnof ncqoijeif jhaKLMCMAIJ FQEOIWJF IONE",  "ioqnnc ejowqnofnc qoijeifjh aKLMCMAIJF QEOIWJFIONE"], skills:["Javascript", "Python"], git:"https://github.com/s-shanky-k"}}/>
                     </div>
-                    <button className="text-[#05d5ba] text-xl inline-block" onClick={handleShowMore}>
+                    <button className="text-theme-cyan text-xl inline-block" onClick={handleShowMore}>
                         <i className="fas fa-angle-up text-3xl "></i>
                         <span className='block'>Show Less</span>
                     </button>

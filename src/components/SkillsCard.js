@@ -8,14 +8,14 @@ import Fade from 'react-reveal'
 function SkillsCard({props}) {
   return (
     <Fade >
-    <div className="p-3 rounded-md bg-transparent border-theme-dark-pink border w-72 hover:border-[#ed016a]">
+    <div className="p-3 rounded-md bg-transparent border-theme-dark-pink border w-72 hover:border-theme-bright-pink">
         <div className="flex w-full h-full items-center">
             <div className='w-8 h-full mr-5'>
                 <img src={`${process.env.PUBLIC_URL}/assets/images/${props.img}`} className='w-full h-full object-contain'></img>
             </div>
             <div className='flex-col items-center'>
-                <div className="w-fit text-sm font-medium text-white">{props.title}</div>
-                <div className="w-fit text-xs font-thin text-white">({props.skills})</div>
+                <div className="w-fit text-sm font-medium text-theme-primary-font-color">{props.title}</div>
+                <div className="w-fit text-xs font-thin text-theme-primary-font-color">({props.skills})</div>
             </div>
         </div>
     </div>

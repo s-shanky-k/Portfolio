@@ -58,11 +58,11 @@ function LandingSection() {
                 </div>
                 
                 <div className="w-full overflow-hidden absolute lg:invisible">
-                    <Diamond className='animate-spin-slow fill-[#d52158] opacity-20 mix-blend-screen'/>
+                    <Diamond className='animate-spin-slow fill-theme-medium-pink opacity-20 mix-blend-screen'/>
                 </div>
                 <Fade right delay={0}>
                 <div className='h-0 w-0 lg:w-full lg:h-full -mr-96'>
-                    <Diamond className='animate-spin-vslow h-0 w-0 fill-[#d52158] lg:w-full lg:h-full'/>
+                    <Diamond className='animate-spin-vslow h-0 w-0 fill-theme-medium-pink lg:w-full lg:h-full'/>
                 </div>
                 </Fade>
             </div>
