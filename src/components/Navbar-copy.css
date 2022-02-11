@@ -39,7 +39,7 @@
   }
 
   .nav-links{
-    color: #05d5ba;
+    color: var(--theme-cyan);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +49,7 @@
   }
 
   .nav-links.active {
-    color: #ed016a;
+    color: var(--theme-bright-pink);
   }
 
   .nav-title{
@@ -136,7 +136,7 @@
     }
   
     .nav-menu.active {
-      background: black;
+      background: var(--theme-black);
       left: 0;
       opacity: 1;
       transition: all 0.6s ease;
@@ -147,13 +147,13 @@
       transition: all 0.6s ease;
       text-transform: uppercase;
       z-index: 1;
-      color: #ed016a;
+      color: var(--theme-bright-pink);
     }
   
     .nav-links:hover .material-icons-outlined{
       transform: translateY(0) rotate(0) translateX(50%);
       transition: all 0.8s;
-      color: #ed016a;
+      color: var(--theme-bright-pink);
     }
 
     .menu-icon {
@@ -164,7 +164,7 @@
       transform: translate(-100%, 5%);
       font-size: 1.8rem;
       cursor: pointer;
-      color: #05d5ba;
+      color: var(--theme-cyan);
       z-index: 6;
     }
   }
@@ -193,7 +193,7 @@
   
   nav a:hover i{
     transition: all 0.4s;
-    color: #05d5ba;
+    color: var(--theme-cyan);
   }
   
   nav a i {
@@ -214,7 +214,7 @@
   }
   
   nav a span {
-    color: #05d5ba;
+    color: var(--theme-cyan);
     font-size: 12px;
     font-weight: 600;
     transform: translateY(20px);
@@ -224,7 +224,7 @@
   
   nav a span:after {
     content: "";
-    background-color: #05d5ba;
+    background-color: var(--theme-cyan);
     width: 5px;
     height: 5px;
     position: absolute;
@@ -302,6 +302,6 @@
   }
   
   nav .material-icons-outlined {
-    color: #05d5ba;
+    color: var(--theme-cyan);
     font-size: 25px;
   } */

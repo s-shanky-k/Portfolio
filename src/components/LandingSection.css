@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: flex-start;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-    background-color: #121212;
+    background-color: var(--theme-bg-color);
     object-fit: contain;
 }
 
@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-    background-color: #121212;
+    background-color: var(--theme-bg-color);
     object-fit: contain;
 }
 
@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    color: #DDDDDD;
+    color: var(--theme-primary-font-color);
 }
 
 .small-heading {
@@ -43,7 +43,7 @@
 }
 
 .big-heading {
-    color: #05d5ba;
+    color: var(--theme-cyan);
     font-size: 5rem;
     line-height: 5rem;
     padding-bottom: 1.5rem;
@@ -80,7 +80,7 @@
         justify-content: center;
         align-items: center;
         box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-        background-color: #121212;
+        background-color: var(--theme-bg-color);
         object-fit: contain;
     }
 
@@ -92,7 +92,7 @@
         justify-content: center;
         align-items: center;
         box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-        background-color: #121212;
+        background-color: var(--theme-bg-color);
         object-fit: contain;
     }
 

@@ -5,12 +5,14 @@ import Navbarcopy from './components/Navbar-copy';
 
 function App() {
   return (
-    <BrowserRouter>
-    <Navbarcopy />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <div id='app' className="theme">
+      <BrowserRouter>
+      <Navbarcopy />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

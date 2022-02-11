@@ -66,7 +66,7 @@
   
   nav a:hover i{
     transition: all 0.4s;
-    color: #05d5ba;
+    color: var(--theme-cyan);
   }
   
   nav a i {
@@ -87,7 +87,7 @@
   }
   
   nav a span {
-    color: #05d5ba;
+    color: var(--theme-cyan);
     font-size: 12px;
     font-weight: 600;
     transform: translateY(20px);
@@ -97,7 +97,7 @@
   
   nav a span:after {
     content: "";
-    background-color: #05d5ba;
+    background-color: var(--theme-cyan);
     width: 5px;
     height: 5px;
     position: absolute;
@@ -175,6 +175,6 @@
   }
   
   nav .material-icons-outlined {
-    color: #05d5ba;
+    color: var(--theme-cyan);
     font-size: 25px;
   }
