@@ -2,7 +2,7 @@ import React from "react";
 import Link from "react-scroll/modules/components/Link";
 import Button from "./Button";
 import "./ResumeSection.css";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 
 function ResumeSection() {
 	return (

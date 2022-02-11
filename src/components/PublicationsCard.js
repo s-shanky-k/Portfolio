@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 // Example:
 // <PublicationsCard props={{title:"Ensemble and Multi Model approach to Environmental Sound Classification",
 //                                             content:"This is the content where I will talk about the paper",

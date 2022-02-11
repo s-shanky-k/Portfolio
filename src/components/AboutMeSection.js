@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMeSection.css";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 
 function AboutMeSection() {
 	return (
