@@ -8,8 +8,8 @@ import Typist from "react-typist";
 function LandingSection({ animationDelay }) {
 	return (
 		<>
-			{animationDelay !== undefined && (
-				<div className="landing-container" id="landing">
+			<div className="landing-container" id="landing">
+				{animationDelay !== undefined && (
 					<div className="landing-content overflow-hidden">
 						<div className="landing-text">
 							<div className="heading">
@@ -97,8 +97,8 @@ function LandingSection({ animationDelay }) {
 							</div>
 						</Fade>
 					</div>
-				</div>
-			)}
+				)}
+			</div>
 		</>
 	);
 }
