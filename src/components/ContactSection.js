@@ -93,7 +93,9 @@ function ContactSection() {
 								/>
 							</div>
 							<ReCAPTCHA
-								sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+								sitekey={
+									process.env.REACT_APP_RECAPTCHA_SITE_KEY
+								}
 								size={"normal"}
 								theme={"dark"}
 								onChange={onChange}
