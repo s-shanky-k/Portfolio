@@ -3,9 +3,32 @@ const router = express.Router();
 const nodemailer = require("nodemailer");
 
 const dotenv = require("dotenv");
+const request = require("request");
 dotenv.config();
 
+const secretKey = process.env.SECRET_KEY;
+
+function verifyCaptcha(req, callback) {
+	const verifyURL = `https://google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}&remoteip=${req.socket.remoteAddress}`;
+	request(verifyURL, (err, res, body) => {
+		body = JSON.parse(body);
+		if (body.success !== undefined && !body.success) {
+			callback(false);
+		} else {
+			callback(true);
+		}
+	});
+}
+
 router.post("/", (req, res, next) => {
+	if (
+		req.body.captcha === undefined ||
+		req.body.captcha === "" ||
+		req.body.captcha === null
+	) {
+		return res.json({ status: false, message: "Captcha not selected" });
+	}
+
 	const transporter = nodemailer.createTransport({
 		service: "gmail",
 		auth: {
@@ -30,13 +53,24 @@ router.post("/", (req, res, next) => {
             </div>
         `,
 	};
-
-	transporter.sendMail(mailOptions, function (error, info) {
-		if (error) {
-			res.json({ status: false, message: "Error in sending mail" });
-			console.log(error);
+	verifyCaptcha(req, function (verify) {
+		if (verify) {
+			transporter.sendMail(mailOptions, function (error, info) {
+				if (error) {
+					res.json({
+						status: false,
+						message: "Error in sending message",
+					});
+					console.log(error);
+				} else {
+					res.json({
+						status: true,
+						message: "Message sent successfully",
+					});
+				}
+			});
 		} else {
-			res.json({ status: true, message: "Email sent successfully" });
+			res.json({ status: false, message: "Failed Captcha Verification" });
 		}
 	});
 });
