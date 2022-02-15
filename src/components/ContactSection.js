@@ -1,43 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import "./ContactSection.css";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Fade from "react-reveal/Fade";
 import ReCAPTCHA from "react-google-recaptcha";
+import axios from "axios";
 toast.configure();
 
 function ContactSection() {
-	const sendEmail = (e) => {
+	const [email, setEmail] = useState({
+		from: "",
+		name: "",
+		message: "",
+		captcha: "",
+	});
+
+	// const { from, name, message, captcha } = email;
+
+	const onInputChange = (e) => {
+		setEmail({ ...email, [e.target.name]: e.target.value });
+	};
+
+	const sendEmail = async (e) => {
+		const toastID = toast.loading("Sending Message ...", {
+			position: "bottom-center",
+			theme: "dark",
+		});
 		e.preventDefault();
-		emailjs
-			.sendForm(
-				"service_oug9vrd",
-				"template_sh7pg2n",
-				e.target,
-				"user_KqkXfrw38kAPok508Ps4u"
-			)
-			.then(
-				(result) => {
-					console.log("Printing Toast");
-					toast.success("Message sent successfully!", {
+		await axios
+			.post("http://localhost:5000/mail/", email)
+			.then((response) => {
+				if (response.data.status) {
+					toast.success(response.data.message, {
 						position: "bottom-center",
 						theme: "dark",
 					});
-				},
-				(error) => {
-					toast.error("Message was not sent :(", {
+				} else {
+					toast.error(response.data.message, {
 						position: "bottom-center",
 						theme: "dark",
 					});
 				}
-			);
+			})
+			.catch((error) => {
+				toast.dismiss(toastID);
+				toast.error("Message was not sent :(", {
+					position: "bottom-center",
+					theme: "dark",
+				});
+			});
+		toast.dismiss(toastID);
 		e.target.reset();
 	};
 
 	const onChange = (value) => {
-		console.log("Captcha value:", value);
+		setEmail({ ...email, captcha: value });
 	};
 
 	return (
@@ -64,6 +83,7 @@ function ContactSection() {
 									className="text-base rounded-sm block w-72 p-2.5 border bg-theme-bg-color border-theme-dark-pink placeholder-gray-400 text-theme-primary-font-color"
 									placeholder="Name"
 									required
+									onChange={onInputChange}
 								/>
 							</div>
 							<div className="mb-5">
@@ -72,11 +92,12 @@ function ContactSection() {
 								</label>
 								<input
 									type="email"
-									id="email"
-									name="email"
+									id="from"
+									name="from"
 									className="text-base rounded-sm block w-72 p-2.5 border bg-theme-bg-color border-theme-dark-pink placeholder-gray-400 text-theme-primary-font-color"
 									placeholder="name@example.com"
 									required
+									onChange={onInputChange}
 								/>
 							</div>
 							<div className="mb-5">
@@ -90,10 +111,13 @@ function ContactSection() {
 									className="text-base rounded-sm block h-28 w-full md:w-3/5 lg:w-2/5 p-2.5 border bg-theme-bg-color border-theme-dark-pink placeholder-gray-400 text-theme-primary-font-color"
 									placeholder="Your Message"
 									required
+									onChange={onInputChange}
 								/>
 							</div>
 							<ReCAPTCHA
-								sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+								sitekey={
+									process.env.REACT_APP_RECAPTCHA_SITE_KEY
+								}
 								size={"normal"}
 								theme={"dark"}
 								onChange={onChange}
