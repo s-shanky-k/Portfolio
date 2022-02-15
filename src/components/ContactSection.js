@@ -14,70 +14,49 @@ function ContactSection() {
 		from: "",
 		name: "",
 		message: "",
+		captcha: "",
 	});
 
-	const { from, name, message } = email;
-
-	// const sendEmail = (e) => {
-	// 	e.preventDefault();
-	// 	emailjs
-	// 		.sendForm(
-	// 			"service_oug9vrd",
-	// 			"template_sh7pg2n",
-	// 			e.target,
-	// 			"user_KqkXfrw38kAPok508Ps4u"
-	// 		)
-	// 		.then(
-	// 			(result) => {
-	// 				console.log("Printing Toast");
-	// 				toast.success("Message sent successfully!", {
-	// 					position: "bottom-center",
-	// 					theme: "dark",
-	// 				});
-	// 			},
-	// 			(error) => {
-	// 				toast.error("Message was not sent :(", {
-	// 					position: "bottom-center",
-	// 					theme: "dark",
-	// 				});
-	// 			}
-	// 		);
-	// 	e.target.reset();
-	// };
+	// const { from, name, message, captcha } = email;
 
 	const onInputChange = (e) => {
 		setEmail({ ...email, [e.target.name]: e.target.value });
 	};
 
 	const sendEmail = async (e) => {
-		// console.log("Email:", email);
+		const toastID = toast.loading("Sending Message ...", {
+			position: "bottom-center",
+			theme: "dark",
+		});
 		e.preventDefault();
 		await axios
 			.post("http://localhost:5000/mail/", email)
 			.then((response) => {
 				if (response.data.status) {
-					toast.success("Message sent successfully!", {
+					toast.success(response.data.message, {
 						position: "bottom-center",
 						theme: "dark",
 					});
 				} else {
-					toast.error("Message was not sent :(", {
+					toast.error(response.data.message, {
 						position: "bottom-center",
 						theme: "dark",
 					});
 				}
 			})
 			.catch((error) => {
+				toast.dismiss(toastID);
 				toast.error("Message was not sent :(", {
 					position: "bottom-center",
 					theme: "dark",
 				});
 			});
+		toast.dismiss(toastID);
 		e.target.reset();
 	};
 
 	const onChange = (value) => {
-		console.log("Captcha value:", value);
+		setEmail({ ...email, captcha: value });
 	};
 
 	return (
