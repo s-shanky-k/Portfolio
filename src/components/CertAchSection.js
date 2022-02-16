@@ -1,4 +1,6 @@
 import React from "react";
+import { AchievementsData } from "./assets/Data/AchievementsData";
+import { CertificationsData } from "./assets/Data/CertificationsData";
 import "./CertAchSection.css";
 import ListCard from "./ListCard";
 
@@ -11,48 +13,9 @@ function CertAchSection() {
 					<h1>Achievements</h1>
 				</div>
 				<ol className="relative mt-5 ml-7 w-10/12 lg:w-9/12">
-					<ListCard
-						props={{
-							title: "Machine Learning",
-							content: "Amazin certificate received",
-							link: "https://github.com",
-						}}
-					/>
-					<ListCard
-						props={{
-							title: "Machine Learning",
-							content: "Amazin certificate received",
-							link: "https://github.com",
-						}}
-					/>
-					<ListCard
-						props={{
-							title: "Machine Learning",
-							content: "Amazin certificate received",
-							link: "https://github.com",
-						}}
-					/>
-					<ListCard
-						props={{
-							title: "Machine Learning",
-							content: "Amazin certificate received",
-							link: "https://github.com",
-						}}
-					/>
-					<ListCard
-						props={{
-							title: "Machine Learning",
-							content: "Amazin certificate received",
-							link: "https://github.com",
-						}}
-					/>
-					<ListCard
-						props={{
-							title: "Machine Learning",
-							content: "Amazin certificate received",
-							link: "https://github.com",
-						}}
-					/>
+					{AchievementsData.map((item, index) => (
+						<ListCard key={index + 1} props={item} />
+					))}
 				</ol>
 			</div>
 
@@ -62,41 +25,9 @@ function CertAchSection() {
 					<h1>Certifications</h1>
 				</div>
 				<ol className="relative mt-5 ml-7 w-10/12 lg:w-9/12">
-					<ListCard
-						props={{
-							title: "Machine Learning",
-							content: "Amazin certificate received",
-							link: "https://github.com",
-						}}
-					/>
-					<ListCard
-						props={{
-							title: "Machine Learning",
-							content: "Amazin certificate received",
-							link: "https://github.com",
-						}}
-					/>
-					<ListCard
-						props={{
-							title: "Machine Learning",
-							content: "Amazin certificate received",
-							link: "https://github.com",
-						}}
-					/>
-					<ListCard
-						props={{
-							title: "Machine Learning",
-							content: "Amazin certificate received",
-							link: "https://github.com",
-						}}
-					/>
-					<ListCard
-						props={{
-							title: "Machine Learning",
-							content: "Amazin certificate received",
-							link: "https://github.com",
-						}}
-					/>
+					{CertificationsData.map((item, index) => (
+						<ListCard key={index + 1} props={item} />
+					))}
 				</ol>
 			</div>
 		</div>

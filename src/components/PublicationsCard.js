@@ -11,10 +11,10 @@ import Fade from "react-reveal/Fade";
 function PublicationsCard({ props }) {
 	return (
 		<Fade bottom>
-			<div className="flex flex-col items-center w-5/6 bg-theme-secondary-black border-theme-dark-pink border-4 rounded-lg shadow-md md:flex-row">
+			<div className="flex flex-col items-center my-4 w-5/6 bg-theme-secondary-black border-theme-dark-pink border-4 rounded-lg shadow-md md:flex-row">
 				<img
 					className="object-cover w-fit mt-4 h-96 rounded-lg md:ml-2 md:my-2 md:h-auto md:w-48 transform transition duration-500 md:hover:scale-105"
-					src={`${process.env.PUBLIC_URL}/assets/images/${props.img}`}
+					src={`${process.env.PUBLIC_URL}/assets/${props.img}`}
 					alt=""
 				/>
 				<div className="flex flex-col justify-between p-4 leadng-normal">

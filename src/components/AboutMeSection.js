@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutMeSection.css";
 import Fade from "react-reveal/Fade";
+import { AboutMeData } from "./assets/Data/AboutMeData";
 
 function AboutMeSection() {
 	return (
@@ -13,7 +14,7 @@ function AboutMeSection() {
 				<Fade left>
 					<div className="aboutme-img-container">
 						<img
-							src={`${process.env.PUBLIC_URL}/assets/images/pic.jpeg`}
+							src={`${process.env.PUBLIC_URL}/assets/${AboutMeData.image}`}
 							alt="Picture"
 							className="aboutme-img"
 						/>
@@ -21,23 +22,11 @@ function AboutMeSection() {
 				</Fade>
 				<Fade>
 					<div className="aboutme-text">
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
-						<p>This is about me</p>
+						{AboutMeData.content.map((item, index) => (
+							<p className="aboutme-text-para" key={index + 1}>
+								{item}
+							</p>
+						))}
 					</div>
 				</Fade>
 			</div>

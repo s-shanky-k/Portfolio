@@ -1,6 +1,7 @@
 import React from "react";
 import "./MusicSection.css";
 import Fade from "react-reveal";
+import { MusicData } from "./assets/Data/MusicData";
 
 function MusicSection() {
 	return (
@@ -10,13 +11,11 @@ function MusicSection() {
 				<h1>Music</h1>
 			</div>
 			<div className="music-content">
-				<div className="music-text">
-					This what I am listening to now!
-				</div>
+				<div className="music-text">{MusicData.content}</div>
 				<Fade bottom>
 					<div className="music-spotify">
 						<iframe
-							src="https://open.spotify.com/embed/playlist/0g7B25IgddhKE8wb0OgO0e?utm_source=generator&theme=0"
+							src={MusicData.playlistLink}
 							width="90%"
 							height="100%"
 							frameBorder="0"

@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Navbarcopy from "./components/Navbar-copy";
+import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
 
@@ -18,7 +18,7 @@ function App() {
 				<Loader />
 			) : (
 				<BrowserRouter>
-					<Navbarcopy />
+					<Navbar />
 					<Routes>
 						<Route path="/" element={<Home />} />
 					</Routes>

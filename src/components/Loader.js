@@ -1,6 +1,6 @@
 import React from "react";
 import Zoom from "react-reveal/Zoom";
-import { ReactComponent as Diamond } from "./assets/diamond.svg";
+import { ReactComponent as Diamond } from "./assets/SVG/diamond.svg";
 import { useEffect, useState } from "react";
 
 function Loader() {

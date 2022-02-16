@@ -66,12 +66,12 @@ function ContactSection() {
 				<h1>Contact</h1>
 			</div>
 			<div className="contact-content">
-				<div className="contact-text">
+				{/* <div className="contact-text">
 					This what I am listening to now!
-				</div>
+				</div> */}
 				<div className="contact-form">
 					<Fade>
-						<form className="w-full" onSubmit={sendEmail}>
+						<form className="w-full py-4" onSubmit={sendEmail}>
 							<div className="mb-5">
 								<label className="block mb-2 text-base font-medium text-theme-primary-font-color">
 									Full Name

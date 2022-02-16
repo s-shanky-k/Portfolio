@@ -57,9 +57,11 @@
 }
 
 .aboutme-img {
-	height: 60%;
-	width: 50%;
+	height: 90%;
+	width: 70%;
 	object-fit: cover;
+	object-position: center;
+	border-radius: 4px;
 }
 
 .aboutme-text {
@@ -70,6 +72,11 @@
 	align-items: center;
 	justify-content: center;
 	color: var(--theme-primary-font-color);
+	font-size: large;
+}
+
+.aboutme-text-para {
+	margin: 1rem 0;
 }
 
 @media screen and (max-width: 1024px) {
