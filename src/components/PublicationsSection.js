@@ -1,4 +1,5 @@
 import React from "react";
+import { PublicationsData } from "./assets/Data/PublicationsData";
 import PublicationsCard from "./PublicationsCard";
 import "./PublicationsSection.css";
 
@@ -10,20 +11,13 @@ function PublicationsSection() {
 				<h1>Publications</h1>
 			</div>
 			<div className="publications-content">
-				<div className="publications-text">
+				{/* <div className="publications-text">
 					This what I am listening to now!
-				</div>
+				</div> */}
 				<div className="publications-cards">
-					<PublicationsCard
-						props={{
-							title: "Ensemble and Multi Model approach to Environmental Sound Classification",
-							content:
-								"This is the content where I will talk about the paper",
-							img: "paper.png",
-							publisher: "IEEE",
-							link: "https://ieeexplore.ieee.org/document/9616775",
-						}}
-					/>
+					{PublicationsData.map((item, index) => (
+						<PublicationsCard key={index + 1} props={item} />
+					))}
 				</div>
 			</div>
 		</div>

@@ -72,6 +72,10 @@
 	color: var(--theme-primary-font-color);
 }
 
+.aboutme-text-para {
+	margin: 1rem 0;
+}
+
 @media screen and (max-width: 1024px) {
 	.aboutme-container {
 		height: 100vh;

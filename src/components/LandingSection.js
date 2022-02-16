@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect } from "react";
 import "./LandingSection.css";
-import { ReactComponent as Diamond } from "./assets/diamond.svg";
+import { ReactComponent as Diamond } from "./assets/SVG/diamond.svg";
 import SocialMedia from "./SocialMedia";
 import Fade from "react-reveal/Fade";
 import Typist from "react-typist";
