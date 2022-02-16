@@ -1,32 +1,20 @@
 export const AchievementsData = [
 	{
-		title: "Machine Learning",
-		content: "Amazin certificate received",
-		link: "https://github.com",
+		title: "General Secretary, Computer Science and Engineering Association (CSEA)",
+		content: "October’21 - Present",
 	},
 	{
-		title: "Machine Learning",
-		content: "Amazin certificate received",
-		link: "https://github.com",
+		title: "Director, Computer Society of Anna University (CSAU)",
+		content: "August’20 – Present",
 	},
 	{
-		title: "Machine Learning",
-		content: "Amazin certificate received",
-		link: "https://github.com",
+		title: "Frontend Developer, CSEA",
+		content:
+			"Designed and developed the website using React for Abacus’21 - intercollege tech symposium.",
 	},
 	{
-		title: "Machine Learning",
-		content: "Amazin certificate received",
-		link: "https://github.com",
-	},
-	{
-		title: "Machine Learning",
-		content: "Amazin certificate received",
-		link: "https://github.com",
-	},
-	{
-		title: "Machine Learning",
-		content: "Amazin certificate received",
-		link: "https://github.com",
+		title: "Developer & Organizer, CEG Tech Forum",
+		content:
+			"Collaborated with Tech Team to develop Kurukshetra’21 website.",
 	},
 ];

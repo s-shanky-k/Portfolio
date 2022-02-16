@@ -1,28 +1,25 @@
 export const EducationData = [
 	{
 		name: "College Of Engineering Guindy, Anna Univeristy",
-		img: "pic-ceg.png",
+		img: "logos/education/ceg.png",
 		domain: "BE Computer Science and Engineering",
-		startDate: "Apr'20",
-		endDate: "Mar'20",
+		endDate: "May'22",
 		achievements: ["CGPA: 9.24/10"],
 	},
 
 	{
 		name: "SBOA School & Junior College",
-		img: "pic-sboa.jfif",
-		domain: "Higher Secondary School",
-		startDate: "Apr'20",
-		endDate: "Mar'20",
-		achievements: ["Boards: 96% (480/100)"],
+		img: "logos/education/sboa.jpg",
+		domain: "Senior School Education",
+		endDate: "May'18",
+		achievements: ["CBSE Senior School Examination: 480/100 (96%)"],
 	},
 
 	{
 		name: "SBOA School & Junior College",
-		img: "pic-sboa.jfif",
-		domain: "Secondary School",
-		startDate: "Apr'20",
-		endDate: "Mar'20",
-		achievements: ["CGPA 10/10"],
+		img: "logos/education/sboa.jpg",
+		domain: "Secondary School Education",
+		endDate: "May'16",
+		achievements: ["CBSE Secondary School Examination: CGPA 10/10"],
 	},
 ];
