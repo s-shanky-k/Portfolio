@@ -19,8 +19,8 @@ function ProjectsSimpleCard({ props }) {
 		<Fade bottom>
 			<div className="w-80 p-2 m-4 bg-theme-secondary-black border-theme-dark-pink border-4 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
 				<img
-					className="max-h-48 w-fit object-cover rounded-lg "
-					src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+					className="max-h-48 w-fit object-cover rounded-lg aspect-square "
+					src={`${process.env.PUBLIC_URL}/assets/${props.img}`}
 					alt=""
 				/>
 				<div className="p-2">

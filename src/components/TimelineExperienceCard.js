@@ -12,7 +12,7 @@ function TimelineExperienceCard({ props }) {
 		<>
 			<div className="w-28 h-12 mb-2">
 				<img
-					src={`${process.env.PUBLIC_URL}/assets/images/${props.img}`}
+					src={`${process.env.PUBLIC_URL}/assets/${props.img}`}
 					className="max-w-full max-h-full object-contain object-left"
 				></img>
 			</div>

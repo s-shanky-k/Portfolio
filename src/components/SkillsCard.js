@@ -11,7 +11,7 @@ function SkillsCard({ props }) {
 				<div className="flex w-full h-full items-center">
 					<div className="w-8 h-full mr-5">
 						<img
-							src={`${process.env.PUBLIC_URL}/assets/images/${props.img}`}
+							src={`${process.env.PUBLIC_URL}/assets/${props.img}`}
 							className="w-full h-full object-contain"
 						></img>
 					</div>

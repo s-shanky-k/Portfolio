@@ -59,6 +59,7 @@
 .resume-img {
 	height: 100%;
 	width: 50%;
+	border-radius: 3px;
 }
 
 .resume-text {

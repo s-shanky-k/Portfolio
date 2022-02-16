@@ -63,7 +63,7 @@ function ProjectCard({ props }) {
 						<div className="w-4/6 md:w-2/4 shadow-lg rounded-lg -ml-52 md:-ml-16">
 							<img
 								src={
-									`${process.env.PUBLIC_URL}/assets/images/` +
+									`${process.env.PUBLIC_URL}/assets/` +
 									`${props.img}`
 								}
 								alt=""
@@ -80,7 +80,7 @@ function ProjectCard({ props }) {
 						<div className="w-4/6 md:w-2/4 shadow-lg rounded-lg -mr-52 md:-mr-16">
 							<img
 								src={
-									`${process.env.PUBLIC_URL}/assets/images/` +
+									`${process.env.PUBLIC_URL}/assets/` +
 									`${props.img}`
 								}
 								alt=""

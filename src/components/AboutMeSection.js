@@ -14,7 +14,7 @@ function AboutMeSection() {
 				<Fade left>
 					<div className="aboutme-img-container">
 						<img
-							src={`${process.env.PUBLIC_URL}/assets/images/${AboutMeData.image}`}
+							src={`${process.env.PUBLIC_URL}/assets/${AboutMeData.image}`}
 							alt="Picture"
 							className="aboutme-img"
 						/>

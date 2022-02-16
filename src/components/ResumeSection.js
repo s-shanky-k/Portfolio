@@ -16,7 +16,7 @@ function ResumeSection() {
 				<Fade left>
 					<div className="resume-img-container">
 						<img
-							src={`${process.env.PUBLIC_URL}/assets/images/${ResumeData.img}`}
+							src={`${process.env.PUBLIC_URL}/assets/${ResumeData.img}`}
 							alt="Picture"
 							className="resume-img "
 						/>
