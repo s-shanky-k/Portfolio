@@ -1,18 +1,17 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import LandingSection from "../components/LandingSection";
-import AboutMeSection from "../components/AboutMeSection";
-import CertAchSection from "../components/CertAchSection";
-import ContactSection from "../components/ContactSection";
-import ExpEduSection from "../components/ExpEduSection";
-import MusicSection from "../components/MusicSection";
-import PhotoSection from "../components/PhotoSection";
-import ProjectsSection from "../components/ProjectsSection";
-import PublicationsSection from "../components/PublicationsSection";
-import ResumeSection from "../components/ResumeSection";
-import SkillsSection from "../components/SkillsSection";
-import FooterSection from "../components/FooterSection";
-import Loader from "../components/Loader";
+import LandingSection from "../components/LandingSection/LandingSection";
+import AboutMeSection from "../components/AboutMeSection/AboutMeSection";
+import CertAchSection from "../components/CertAchSection/CertAchSection";
+import ContactSection from "../components/ContactSection/ContactSection";
+import ExpEduSection from "../components/ExpEduSection/ExpEduSection";
+import MusicSection from "../components/MusicSection/MusicSection";
+import PhotoSection from "../components/PhotoSection/PhotoSection";
+import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
+import PublicationsSection from "../components/PublicationsSection/PublicationsSection";
+import ResumeSection from "../components/ResumeSection/ResumeSection";
+import SkillsSection from "../components/SkillsSection/SkillsSection";
+import FooterSection from "../components/FooterSection/FooterSection";
 
 function Home() {
 	const [width, setWidth] = useState(window.innerWidth);
