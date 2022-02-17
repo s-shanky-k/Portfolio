@@ -1,6 +1,21 @@
 import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 
+// Usage:
+// <TimelineExperienceCard props={{
+// 	name: "Wells Fargo",
+// 	img: "logos/experience/wellsfargo.png",
+// 	role: "Software Developer Engineer Intern",
+// 	startDate: "Apr'21",
+// 	endDate: "Jul'21",
+// 	location: "Bangalore, India",
+// 	duties: [
+// 		"Designed and developed an unsupervised machine learning model to identify location-based fraud transactions.",
+// 		"Used Pyspark to perform distributed data processing, model training and prediction.",
+// 		"Developed real-time streaming data pipelines using Kafka.",
+// 	],
+// }}
+
 function TimelineExperienceCard({ props }) {
 	const [moreInfo, setMoreInfo] = useState(false);
 	const toggleMoreInfo = () => {

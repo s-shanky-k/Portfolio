@@ -1,6 +1,9 @@
 import React from "react";
 import Zoom from "react-reveal/Zoom";
 
+// Usage:
+// <Modal props={{ img: "images/photography/photo1.jpeg" }} />;
+
 function Modal({ setOpenModal, img }) {
 	return (
 		<Zoom duration={400}>

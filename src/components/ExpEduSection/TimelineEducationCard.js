@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 
+// Usage:
+// <TimelineEducationCard props={{
+// 		name: "SBOA School & Junior College",
+// 		img: "logos/education/sboa.jpg",
+// 		domain: "Senior School Education",
+// 		endDate: "May'18",
+// 		achievements: ["CBSE Senior School Examination: 480/100 (96%)"],
+// 	}}
+
 function TimelineEducationCard({ props }) {
 	const [moreInfo, setMoreInfo] = useState(false);
 	const toggleMoreInfo = () => setMoreInfo(!moreInfo);

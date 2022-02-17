@@ -3,6 +3,12 @@ import TimelineExperienceCard from "./TimelineExperienceCard";
 import TimelineEducationCard from "./TimelineEducationCard";
 import Fade from "react-reveal/Fade";
 
+// Usage:
+// <Timeline props={{
+// 		type: "experience",
+// 		experience: ExperienceData,
+// 		}}
+
 function Timeline({ props }) {
 	return (
 		<>

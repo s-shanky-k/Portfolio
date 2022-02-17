@@ -1,6 +1,9 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
+// Usage:
+// <PhotoContainer props={{ img: "images/photography/photo1.jpeg" }} />;
+
 function PhotoContainer({ props }) {
 	return (
 		<>

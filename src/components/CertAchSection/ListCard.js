@@ -1,6 +1,13 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
+// Usage:
+// <ListCard key={index + 1} props={{
+// 		title: "Convolutional Neural Networks",
+// 		content: "Authorized by deeplearning.ai and offered through Coursera",
+// 		link: "https://coursera.org/share/3b099973e2ab2411326c2cff23b8b2d1",
+// 	}} />
+
 function ListCard({ props }) {
 	return (
 		<Fade top>
