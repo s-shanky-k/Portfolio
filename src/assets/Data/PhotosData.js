@@ -1,6 +1,6 @@
 export const PhotosData = [
 	{ img: "images/photography/photo1.jpeg" },
-	{ img: "images/photography/photo2.jpeg" },
+	{ img: "images/photography/photo2.jpg" },
 	{ img: "images/photography/photo3.jpeg" },
 	{ img: "images/photography/photo4.jpg" },
 	{ img: "images/photography/photo5.jpeg" },

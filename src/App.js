@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Loader from "./components/Loader/Loader";
 
 function App() {
