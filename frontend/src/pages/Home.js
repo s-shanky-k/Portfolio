@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { useEffect, useState } from "react";
 import LandingSection from "../components/LandingSection/LandingSection";
 import AboutMeSection from "../components/AboutMeSection/AboutMeSection";
@@ -17,18 +17,18 @@ function Home() {
 	const [width, setWidth] = useState(window.innerWidth);
 	const [animationDelay, setAnimationDelay] = useState();
 
-	const handleAnimationDelay = () => {
+	const handleAnimationDelay = useCallback(() => {
 		setWidth(window.innerWidth);
 		if (width <= 1024) {
 			setAnimationDelay(400);
 		} else {
 			setAnimationDelay(2000);
 		}
-	};
+	}, [width]);
 
 	useEffect(() => {
 		handleAnimationDelay();
-	}, []);
+	}, [handleAnimationDelay]);
 
 	window.addEventListener("load", handleAnimationDelay);
 	window.addEventListener("resize", handleAnimationDelay);
