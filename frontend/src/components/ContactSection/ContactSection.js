@@ -74,7 +74,7 @@ function ContactSection() {
 							className="w-full lg:w-2/3 xl:w-1/2 py-4 flex flex-col"
 							onSubmit={sendEmail}
 						>
-							<div className="mb-5 w-3/5 flex flex-col">
+							<div className="mb-5 w-4/5 md:w-3/5 flex flex-col">
 								<label className="mb-2 text-base font-medium text-theme-primary-font-color">
 									Full Name
 								</label>
@@ -88,7 +88,7 @@ function ContactSection() {
 									onChange={onInputChange}
 								/>
 							</div>
-							<div className="mb-5 w-3/5 flex flex-col">
+							<div className="mb-5 w-4/5 md:w-3/5 flex flex-col">
 								<label className="mb-2 text-base font-medium text-theme-primary-font-color">
 									Email Address
 								</label>

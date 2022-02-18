@@ -4,8 +4,6 @@ import "./PhotoSection.css";
 import Modal from "./Modal.js";
 import { PhotosData } from "../../assets/Data/PhotosData";
 
-// 1024 - 4
-
 function PhotoSection() {
 	const [width, setWidth] = useState(window.innerWidth);
 	const [openModal, setOpenModal] = useState(false);

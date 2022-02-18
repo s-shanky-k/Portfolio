@@ -2,8 +2,6 @@
 	height: 100vh;
 	z-index: 1;
 	width: 100%;
-	/* margin-top: -48px; */
-	/* padding-top: 5px; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -49,15 +47,15 @@
 
 .aboutme-img-container {
 	width: 40%;
-	height: 100%;
-	padding: 2.5rem;
+	height: 80%;
+	margin: 2.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .aboutme-img {
-	height: 90%;
+	height: 100%;
 	width: 70%;
 	object-fit: cover;
 	object-position: center;
@@ -69,14 +67,16 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	color: var(--theme-primary-font-color);
 	font-size: large;
+	text-align: justify;
+	margin-right: 2.5rem;
 }
 
 .aboutme-text-para {
-	margin: 1rem 0;
+	padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -84,7 +84,6 @@
 		height: 100vh;
 		z-index: 1;
 		width: 100%;
-		/* margin-top: -75px; */
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -93,6 +92,7 @@
 		background-color: var(--theme-bg-color);
 		object-fit: contain;
 	}
+
 	.aboutme-content {
 		height: 100%;
 		width: 100%;
@@ -108,41 +108,54 @@
 	.aboutme-img-container {
 		width: 60%;
 		height: 60%;
+		margin: 2.5rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 
+	.aboutme-img {
+		height: 100%;
+		width: 80%;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 4px;
+	}
+
 	.aboutme-text {
 		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		color: var(--theme-primary-font-color);
+		height: 40%;
+		padding: 0 2.5rem;
+		margin-right: 0rem;
 	}
 }
 
 @media screen and (max-width: 640px) {
+	.aboutme-container {
+		height: fit-content;
+	}
+
 	.aboutme-img-container {
-		width: 70%;
-		height: 100%;
+		width: 60%;
+		height: 50%;
+		margin: 1.5rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
+
 	.aboutme-img {
 		height: 100%;
 		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 4px;
 	}
+
 	.aboutme-text {
 		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		color: var(--theme-primary-font-color);
+		height: 50%;
+		padding: 0 2rem;
+		font-size: medium;
 	}
 }
