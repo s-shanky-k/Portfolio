@@ -29,7 +29,7 @@ function ContactSection() {
 		});
 		e.preventDefault();
 		await axios
-			.post(REACT_APP_API_MAIL_URL, email)
+			.post(process.env.REACT_APP_API_MAIL_URL, email)
 			.then((response) => {
 				if (response.data.status) {
 					toast.success(response.data.message, {
