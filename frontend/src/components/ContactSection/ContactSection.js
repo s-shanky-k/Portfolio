@@ -8,6 +8,12 @@ import ReCAPTCHA from "react-google-recaptcha";
 import axios from "axios";
 toast.configure();
 
+const api = axios.create({
+	baseURL: REACT_APP_API_BASE_URL,
+});
+
+const url_mail = "mail/";
+
 function ContactSection() {
 	const [email, setEmail] = useState({
 		from: "",
@@ -28,8 +34,8 @@ function ContactSection() {
 			theme: "dark",
 		});
 		e.preventDefault();
-		await axios
-			.post(process.env.REACT_APP_API_MAIL_URL, email)
+		await api
+			.post(`${url_mail}`, email)
 			.then((response) => {
 				if (response.data.status) {
 					toast.success(response.data.message, {
