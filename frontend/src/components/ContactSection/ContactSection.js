@@ -9,7 +9,7 @@ import axios from "axios";
 toast.configure();
 
 const api = axios.create({
-	baseURL: REACT_APP_API_BASE_URL,
+	baseURL: process.env.REACT_APP_API_BASE_URL,
 });
 
 const url_mail = "mail/";
