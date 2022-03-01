@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const nodemailer = require("nodemailer");
+const { body, validationResult } = require("express-validator");
 
 const dotenv = require("dotenv");
 const request = require("request");
@@ -20,29 +21,40 @@ function verifyCaptcha(req, callback) {
 	});
 }
 
-router.post("/", (req, res, next) => {
-	if (
-		req.body.captcha === undefined ||
-		req.body.captcha === "" ||
-		req.body.captcha === null
-	) {
-		return res.json({ status: false, message: "Captcha not selected" });
-	}
+router.post(
+	"/",
+	body("name").notEmpty().withMessage("Name cannot be empty"),
+	body("from").isEmail().withMessage("Invalid Email"),
+	body("message").notEmpty().withMessage("Message cannot be empty"),
+	(req, res, next) => {
+		const errors = validationResult(req);
 
-	const transporter = nodemailer.createTransport({
-		service: "gmail",
-		auth: {
-			user: process.env.MAILER_EMAIL_ID,
-			pass: process.env.MAILER_EMAIL_PWD,
-		},
-	});
+		if (!errors.isEmpty()) {
+			return res.json({ status: false, message: errors.errors[0].msg });
+		}
 
-	const mailOptions = {
-		from: req.body.from,
-		to: process.env.EMAIL_ID,
-		subject: `Portfolio Message from ${req.body.name}`,
-		text: req.body.message,
-		html: `<div style='padding:10px; border-style: ridge'>
+		if (
+			req.body.captcha === undefined ||
+			req.body.captcha === "" ||
+			req.body.captcha === null
+		) {
+			return res.json({ status: false, message: "Captcha not selected" });
+		}
+
+		const transporter = nodemailer.createTransport({
+			service: "gmail",
+			auth: {
+				user: process.env.MAILER_EMAIL_ID,
+				pass: process.env.MAILER_EMAIL_PWD,
+			},
+		});
+
+		const mailOptions = {
+			from: req.body.from,
+			to: process.env.EMAIL_ID,
+			subject: `Portfolio Message from ${req.body.name}`,
+			text: req.body.message,
+			html: `<div style='padding:10px; border-style: ridge'>
             <h2>You have a new message via your portfolio website</h2>
             <h3>Details</h3>
             <ul>
@@ -52,27 +64,31 @@ router.post("/", (req, res, next) => {
             </ul>
             </div>
         `,
-	};
-	verifyCaptcha(req, function (verify) {
-		if (verify) {
-			transporter.sendMail(mailOptions, function (error, info) {
-				if (error) {
-					res.json({
-						status: false,
-						message: "Error in sending message",
-					});
-					console.log(error);
-				} else {
-					res.json({
-						status: true,
-						message: "Message sent successfully",
-					});
-				}
-			});
-		} else {
-			res.json({ status: false, message: "Failed Captcha Verification" });
-		}
-	});
-});
+		};
+		verifyCaptcha(req, function (verify) {
+			if (verify) {
+				transporter.sendMail(mailOptions, function (error, info) {
+					if (error) {
+						res.json({
+							status: false,
+							message: "Error in sending message",
+						});
+						console.log(error);
+					} else {
+						res.json({
+							status: true,
+							message: "Message sent successfully",
+						});
+					}
+				});
+			} else {
+				res.json({
+					status: false,
+					message: "Failed Captcha Verification",
+				});
+			}
+		});
+	}
+);
 
 module.exports = router;
