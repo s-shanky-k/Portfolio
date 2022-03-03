@@ -1,7 +1,7 @@
 .music-container {
 	height: 100vh;
 	z-index: 1;
-	width: 100%;
+	width: 97%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -9,6 +9,8 @@
 	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 	background-color: var(--theme-bg-color);
 	object-fit: contain;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .music-title {
@@ -64,4 +66,16 @@
 	align-items: center;
 	justify-content: center;
 	color: var(--theme-primary-font-color);
+}
+
+@media screen and (max-width: 1024px) {
+	.music-text {
+		height: 6%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		color: var(--theme-primary-font-color);
+		padding: 0 1rem;
+	}
 }

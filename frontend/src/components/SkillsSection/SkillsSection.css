@@ -1,7 +1,7 @@
 .skills-container {
 	height: fit-content;
 	z-index: 1;
-	width: 100%;
+	width: 97%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -9,6 +9,8 @@
 	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 	background-color: var(--theme-bg-color);
 	object-fit: contain;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .skills-title {
