@@ -8,7 +8,7 @@ function ExpEduSection() {
 	return (
 		<div className="expedu-container">
 			<div className="expedu-experience" id="experience">
-				<div className="aboutme-title">
+				<div className="expedu-title">
 					<i className="material-icons-outlined">work</i>
 					<h1>Experience</h1>
 				</div>
@@ -21,7 +21,7 @@ function ExpEduSection() {
 			</div>
 
 			<div className="expedu-education" id="education">
-				<div className="aboutme-title">
+				<div className="expedu-title">
 					<i className="material-icons-outlined">school</i>
 					<h1>Education</h1>
 				</div>

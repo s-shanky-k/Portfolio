@@ -7,7 +7,7 @@ function FooterSection() {
 		<div className="footer-container" id="footer">
 			<div className="footer-text">
 				<p>
-					Made with loads of{" "}
+					Made with loads of&nbsp;&nbsp;
 					<i className="fas fa-heart text-red-600 text-lg"></i>
 				</p>
 				<p>Developed by Shankar Kumar S</p>

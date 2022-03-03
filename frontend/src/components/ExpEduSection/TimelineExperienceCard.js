@@ -61,7 +61,7 @@ function TimelineExperienceCard({ props }) {
 			</div>
 
 			{moreInfo && (
-				<Fade left>
+				<Fade>
 					<div className="mb-3 text-sm font-normal text-theme-primary-font-color ">
 						{props.duties.map((item, index) => (
 							<div className="mb-1 space-x-2">

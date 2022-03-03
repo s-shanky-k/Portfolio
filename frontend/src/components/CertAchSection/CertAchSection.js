@@ -8,7 +8,7 @@ function CertAchSection() {
 	return (
 		<div className="certach-container">
 			<div className="certach-achievements" id="achievements">
-				<div className="aboutme-title">
+				<div className="certach-title">
 					<i className="material-icons-outlined">emoji_events</i>
 					<h1>Achievements</h1>
 				</div>
@@ -20,7 +20,7 @@ function CertAchSection() {
 			</div>
 
 			<div className="certach-certifications" id="certifications">
-				<div className="aboutme-title">
+				<div className="certach-title">
 					<i className="material-icons-outlined">verified_user</i>
 					<h1>Certifications</h1>
 				</div>

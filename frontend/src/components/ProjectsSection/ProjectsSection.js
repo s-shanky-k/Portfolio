@@ -25,7 +25,7 @@ function ProjectsSection() {
 				))}
 				{!showMore && (
 					<button
-						className="text-theme-cyan text-xl inline-block animate-bounce"
+						className="text-theme-cyan text-xl inline-block animate-bounce hover:text-theme-bright-pink transition ease-in-out duration-300"
 						onClick={handleShowMore}
 					>
 						<span className="block">Other Projects</span>
@@ -43,7 +43,7 @@ function ProjectsSection() {
 							))}
 						</div>
 						<button
-							className="text-theme-cyan text-xl inline-block"
+							className="text-theme-cyan text-xl inline-block hover:text-theme-bright-pink transition ease-in-out duration-300"
 							onClick={handleShowMore}
 						>
 							<i className="fas fa-angle-up text-3xl "></i>
