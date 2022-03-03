@@ -12,7 +12,7 @@ export const ProjectsData = [
 		git: "https://github.com/s-shanky-k/Smart-Attendance-System",
 	},
 	{
-		img: "images/projects/MovieBase.png",
+		img: "images/projects/movie.jpg",
 		title: "MoviBase: Movie Website with Content-Based Recommendations",
 		content: [
 			`A website which makes use of the OMDB API to fetch movie details. 

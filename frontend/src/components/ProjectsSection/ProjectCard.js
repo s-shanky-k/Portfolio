@@ -68,7 +68,7 @@ function ProjectCard({ props }) {
 								)}
 							</div>
 						</div>
-						<div className="w-4/6 md:w-2/4 shadow-lg rounded-lg -ml-52 md:-ml-16">
+						<div className="w-4/6 md:w-2/4 md:h-[22rem] shadow-lg rounded-lg -ml-52 md:-ml-16">
 							<img
 								src={
 									`${process.env.PUBLIC_URL}/assets/` +
@@ -85,7 +85,7 @@ function ProjectCard({ props }) {
 			{props.type === "right" && (
 				<Fade bottom>
 					<div className="flex items-stretch w-5/6 justify-center my-12">
-						<div className="w-4/6 md:w-2/4 shadow-lg rounded-lg -mr-52 md:-mr-16">
+						<div className="w-4/6 md:w-2/4 md:h-[22rem] shadow-lg rounded-lg -mr-52 md:-mr-16">
 							<img
 								src={
 									`${process.env.PUBLIC_URL}/assets/` +
