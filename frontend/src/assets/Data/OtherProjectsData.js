@@ -1,5 +1,14 @@
 export const OtherProjectsData = [
 	{
+		img: "images/projects/Sound.jpeg",
+		title: "Ensemble and Multi Model Approach to Environmental Sound Classification",
+		content: [
+			`Designed and developed a CNN Ensemble based model and Multi model network
+			 to classify environmental sounds`,
+		],
+		skills: ["Python", "Tensorflow"],
+	},
+	{
 		img: "images/projects/BrainTumorSegmentation.jpg",
 		title: "Brain MRI Tumor Segmentation",
 		content: [
