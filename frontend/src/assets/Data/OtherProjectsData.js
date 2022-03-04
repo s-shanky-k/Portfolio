@@ -18,7 +18,7 @@ export const OtherProjectsData = [
 		git: "https://github.com/s-shanky-k/Brain-MRI-Tumor-Segmentation",
 	},
 	{
-		img: "images/projects/Road.png",
+		img: "images/projects/Road.jpg",
 		title: "Automatically Inferring Road Attributes from GPS Trajectories",
 		content: [
 			`A decision tree algorithm to predict road attributes from GPS trajectories.`,

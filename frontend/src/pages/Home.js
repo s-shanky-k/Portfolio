@@ -20,7 +20,7 @@ function Home() {
 	const handleAnimationDelay = useCallback(() => {
 		setWidth(window.innerWidth);
 		if (width <= 1024) {
-			setAnimationDelay(400);
+			setAnimationDelay(700);
 		} else {
 			setAnimationDelay(2000);
 		}
