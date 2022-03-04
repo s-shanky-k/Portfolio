@@ -11,7 +11,7 @@
   Hosted on <b>Netlify</b>
 </p>
 
-![demo](https://raw.githubusercontent.com/s-shanky-k/Portfolio/main/frontend/public/assets/images/snapshots/demo.png)
+![demo](https://github.com/s-shanky-k/Portfolio/blob/main/frontend/public/assets/images/snapshots/demo.png)
 
 ## Portfolio
 
