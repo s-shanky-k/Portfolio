@@ -7,17 +7,29 @@ import { SocialMediaData } from "../../assets/Data/SocialMediaData";
 function SocialMedia() {
 	return (
 		<div className="flex justify-between items-center w-full h-7">
-			<a href={SocialMediaData.instagram}>
+			<a
+				href={SocialMediaData.instagram}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<div className="w-7 relative">
 					<InstagramLogo />
 				</div>
 			</a>
-			<a href={SocialMediaData.linkedin}>
+			<a
+				href={SocialMediaData.linkedin}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<div className="w-7 relative">
 					<LinkedinLogo />
 				</div>
 			</a>
-			<a href={SocialMediaData.github}>
+			<a
+				href={SocialMediaData.github}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<div className="w-7 relatve">
 					<GithubLogo />
 				</div>

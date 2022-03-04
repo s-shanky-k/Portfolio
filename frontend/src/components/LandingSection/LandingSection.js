@@ -3,6 +3,7 @@ import "./LandingSection.css";
 import { ReactComponent as Diamond } from "../../assets/SVG/diamond.svg";
 import SocialMedia from "../SocialMedia/SocialMedia";
 import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 import Typist from "react-typist";
 
 function LandingSection({ animationDelay }) {
@@ -11,6 +12,11 @@ function LandingSection({ animationDelay }) {
 			<div className="landing-container" id="landing">
 				{animationDelay !== undefined && (
 					<div className="landing-content overflow-hidden">
+						<Zoom>
+							<div className="w-full overflow-hidden absolute lg:invisible">
+								<Diamond className="animate-spin-slow fill-theme-medium-pink opacity-20" />
+							</div>
+						</Zoom>
 						<div className="landing-text">
 							<div className="heading">
 								<Fade bottom delay={animationDelay + 100}>
@@ -87,10 +93,9 @@ function LandingSection({ animationDelay }) {
 								</div>
 							</Fade>
 						</div>
-
-						<div className="w-full overflow-hidden absolute lg:invisible">
+						{/* <div className="w-full overflow-hidden absolute lg:invisible">
 							<Diamond className="animate-spin-slow fill-theme-medium-pink opacity-20 mix-blend-screen" />
-						</div>
+						</div> */}
 						<Fade right>
 							<div className="h-0 w-0 lg:w-full lg:h-full -mr-96">
 								<Diamond className="animate-spin-vslow h-0 w-0 fill-theme-medium-pink lg:w-full lg:h-full" />
