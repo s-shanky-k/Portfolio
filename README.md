@@ -1,9 +1,8 @@
 <div align="center">
   <img alt="Logo" src="https://raw.githubusercontent.com/s-shanky-k/Portfolio/main/frontend/public/diamond.ico?token=GHSAT0AAAAAABOU3I6H6GEYQGF7HOWEBBG4YRK624Q" width="100" />
-
 </div>
 <h1 align="center">
-<a href="https://shankarkumars.netlify.app" target="_blank">shankarkumars.netlify.app</a>
+<a href="https://shankarkumars.com/" target="_blank">shankarkumars.com</a>
 </h1>
 
 <p align="center">
