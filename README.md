@@ -6,7 +6,7 @@
 </h1>
 
 <p align="center">
-  Made using <b>React</b>, <b>NodeJS</b> and loads of ❤️ </br>
+  Made using <b>React</b>, <b>NodeJS</b>, <b>Tailwind CSS</b> and loads of ❤️ </br>
   Hosted on <b>Netlify</b>
 </p>
 

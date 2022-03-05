@@ -9,13 +9,13 @@ export const OtherProjectsData = [
 		skills: ["Python", "Tensorflow"],
 	},
 	{
-		img: "images/projects/BrainTumorSegmentation.jpg",
-		title: "Brain MRI Tumor Segmentation",
+		img: "images/projects/Portfolio.png",
+		title: "Portfolio Website",
 		content: [
-			`A Convolution Neural Network based Brain MRI Tumor Segmentation`,
+			"Personal portfolio website developed to showcase my projects, achievements and to help connect with me.",
 		],
-		skills: ["Python", "Tensorflow"],
-		git: "https://github.com/s-shanky-k/Brain-MRI-Tumor-Segmentation",
+		skills: ["React", "NodeJS", "Tailwind CSS"],
+		git: "https://github.com/s-shanky-k/Portfolio",
 	},
 	{
 		img: "images/projects/Road.jpg",
@@ -25,6 +25,15 @@ export const OtherProjectsData = [
 		],
 		skills: ["Python", "Numpy", "Pandas"],
 		git: "https://github.com/s-shanky-k/Automatically-inferring-road-attributes-from-GPS-Trajectories",
+	},
+	{
+		img: "images/projects/BrainTumorSegmentation.jpg",
+		title: "Brain MRI Tumor Segmentation",
+		content: [
+			`A Convolution Neural Network based Brain MRI Tumor Segmentation`,
+		],
+		skills: ["Python", "Tensorflow"],
+		git: "https://github.com/s-shanky-k/Brain-MRI-Tumor-Segmentation",
 	},
 	{
 		img: "images/projects/AtmMachine.png",
