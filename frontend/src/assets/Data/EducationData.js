@@ -12,7 +12,7 @@ export const EducationData = [
 		img: "logos/education/sboa.jpg",
 		domain: "Senior School Education",
 		endDate: "May'18",
-		achievements: ["CBSE Senior School Examination: 480/100 (96%)"],
+		achievements: ["CBSE Senior School Examination: 480/500 (96%)"],
 	},
 
 	{
