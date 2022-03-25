@@ -19,6 +19,7 @@ export const ProjectsData = [
 		],
 		skills: ["Python", "Tensorflow"],
 		type: "right",
+		git: "https://github.com/s-shanky-k/Covid19-Misinformation-Detection-in-Social-Media",
 	},
 	{
 		img: "images/projects/movie.jpg",
