@@ -20,7 +20,7 @@ function ProjectsSimpleCard({ props }) {
 			<>
 				<div className="w-80 p-2 m-4 bg-theme-secondary-black border-theme-dark-pink border-4 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
 					<img
-						className="max-h-48 w-fit object-cover rounded-lg aspect-square "
+						className="max-h-48 min-w-full object-cover rounded-lg aspect-square"
 						src={`${process.env.PUBLIC_URL}/assets/${props.img}`}
 						alt="Project"
 					/>
