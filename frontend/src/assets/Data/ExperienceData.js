@@ -43,3 +43,20 @@ export const ExperienceData = [
 		],
 	},
 ];
+
+export const MoreExperienceData = [
+	{
+		name: "Qatar Computing Research Institute",
+		img: "logos/experience/qcri.png",
+		role: "Summer Research Intern",
+		startDate: "May'20",
+		endDate: "Jul'20",
+		location: "Doha, Qatar (Remote)",
+		duties: [
+			"Worked on a research project titled “Multi Task Learning for Road Attribute Prediction Using Graph Neural Networks”.",
+			"Implemented a decision tree algorithm to predict road attributes from vehicle GPS trajectories.",
+			"Improved the algorithm to predict one-way/two-way road attribute using radius search.",
+			"Performed feature engineering by extracting features like distance, velocity, direction of heading at every GPS point.",
+		],
+	},
+];

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
+import Tooltip from "@mui/material/Tooltip";
 
 // Usage:
 // <TimelineEducationCard props={{
@@ -34,16 +35,20 @@ function TimelineEducationCard({ props }) {
 			<div className="text-sm font-thin mb-1 text-theme-primary-font-color">
 				({props.endDate})
 				{!moreInfo && (
-					<i
-						className="fas fa-info-circle float-right text-base text-theme-medium-pink hover:cursor-pointer"
-						onClick={toggleMoreInfo}
-					></i>
+					<Tooltip title="More Info" placement="right">
+						<i
+							className="fas fa-info-circle float-right text-base text-theme-medium-pink hover:cursor-pointer"
+							onClick={toggleMoreInfo}
+						></i>
+					</Tooltip>
 				)}
 				{moreInfo && (
-					<i
-						className="fas fa-times-circle float-right text-base text-theme-medium-pink hover:cursor-pointer"
-						onClick={toggleMoreInfo}
-					></i>
+					<Tooltip title="Less Info" placement="right">
+						<i
+							className="fas fa-times-circle float-right text-base text-theme-medium-pink hover:cursor-pointer"
+							onClick={toggleMoreInfo}
+						></i>
+					</Tooltip>
 				)}
 			</div>
 
@@ -51,9 +56,9 @@ function TimelineEducationCard({ props }) {
 				<Fade top>
 					<div className="mb-3 text-sm font-normal text-theme-primary-font-color ">
 						{props.achievements.map((item, index) => (
-							<div className="mb-1 space-x-2">
+							<div key={index + 1} className="mb-1 space-x-2">
 								<i className="fas fa-bahai text-xs text-theme-medium-pink"></i>
-								<span key={index + 1}>{item}</span>
+								<span>{item}</span>
 							</div>
 						))}
 					</div>
