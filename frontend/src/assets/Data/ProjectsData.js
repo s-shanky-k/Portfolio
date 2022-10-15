@@ -1,15 +1,14 @@
 export const ProjectsData = [
 	{
-		img: "images/projects/AttendanceSystem.png",
-		title: "Student Attendance Database Management System",
+		img: "images/projects/Covid19DSS.jpg",
+		title: "Explainable AI driven Decision Support System for Covid-19 using Fused Classification & Segmentation ",
 		content: [
-			`A Smart Student Attendance Management System through which faculties
-			 can mark and maintain attendance records of students and students can
-			 view their attendance percentage.`,
+			`A real-time Covid-19 Decision Support System using radiology images which comprises of a classification model and a lesion
+			segmentation model. Explainable AI algorithms are incorporated to provide interpretable results.`,
 		],
-		skills: ["Flask", "SQL Plus", "HTML", "Bootstrap"],
+		skills: ["Python", "PyTorch"],
 		type: "left",
-		git: "https://github.com/s-shanky-k/Smart-Attendance-System",
+		// git: "https://github.com/s-shanky-k/Smart-Attendance-System",
 	},
 	{
 		img: "images/projects/fakeNews.jpg",

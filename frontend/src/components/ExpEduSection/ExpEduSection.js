@@ -1,7 +1,10 @@
 import React from "react";
 import "./ExpEduSection.css";
 import Timeline from "./Timeline";
-import { ExperienceData } from "../../assets/Data/ExperienceData";
+import {
+	ExperienceData,
+	MoreExperienceData,
+} from "../../assets/Data/ExperienceData";
 import { EducationData } from "../../assets/Data/EducationData";
 
 function ExpEduSection() {
@@ -16,6 +19,7 @@ function ExpEduSection() {
 					props={{
 						type: "experience",
 						experience: ExperienceData,
+						moreExperience: MoreExperienceData,
 					}}
 				/>
 			</div>

@@ -2,6 +2,20 @@ export const ExperienceData = [
 	{
 		name: "Wells Fargo",
 		img: "logos/experience/wellsfargo.png",
+		role: "Software Developer Engineer",
+		startDate: "Jul'22",
+		endDate: "Present",
+		location: "Bangalore, India",
+		duties: [
+			"Full stack development under the Enterprise Functions Technology team",
+			"Development, maintenance, and enhancement of the Secured Funding Trading (LARST) & 5G Reporting Platform (LADIS).",
+			"Experience in Angular, ASP.Net and SQL Server.",
+		],
+	},
+
+	{
+		name: "Wells Fargo",
+		img: "logos/experience/wellsfargo.png",
 		role: "Software Developer Engineer Intern",
 		startDate: "Apr'21",
 		endDate: "Jul'21",
@@ -27,7 +41,9 @@ export const ExperienceData = [
 			"Presented at the 18th IMISCOE Annual Conference held in Luxembourg and at IC2S2 2021 held in Zurich.",
 		],
 	},
+];
 
+export const MoreExperienceData = [
 	{
 		name: "Qatar Computing Research Institute",
 		img: "logos/experience/qcri.png",

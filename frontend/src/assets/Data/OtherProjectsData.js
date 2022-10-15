@@ -27,6 +27,18 @@ export const OtherProjectsData = [
 		git: "https://github.com/s-shanky-k/Automatically-inferring-road-attributes-from-GPS-Trajectories",
 	},
 	{
+		img: "images/projects/AttendanceSystem.png",
+		title: "Student Attendance Database Management System",
+		content: [
+			`A Smart Student Attendance Management System through which faculties
+			 can mark and maintain attendance records of students and students can
+			 view their attendance percentage.`,
+		],
+		skills: ["Flask", "SQL Plus", "HTML", "Bootstrap"],
+		type: "left",
+		git: "https://github.com/s-shanky-k/Smart-Attendance-System",
+	},
+	{
 		img: "images/projects/BrainTumorSegmentation.jpg",
 		title: "Brain MRI Tumor Segmentation",
 		content: [

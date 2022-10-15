@@ -20,9 +20,22 @@ function ProjectsSection() {
 				{/* <div className="projects-text">
 					This what I am listening to now!
 				</div> */}
-				{ProjectsData.map((item, index) => (
-					<ProjectCard key={index + 1} props={item} />
-				))}
+				{window.innerWidth > 768 ? (
+					ProjectsData.map((item, index) => (
+						<ProjectCard key={index + 1} props={item} />
+					))
+				) : (
+					<>
+						<div className="w-full h-fit gap-5 flex-wrap flex justify-center items-center">
+							{ProjectsData.map((item, index) => (
+								<ProjectsSimpleCard
+									key={index + 1}
+									props={item}
+								/>
+							))}
+						</div>
+					</>
+				)}
 				{!showMore && (
 					<button
 						className="text-theme-cyan text-xl inline-block animate-bounce hover:text-theme-bright-pink transition ease-in-out duration-300"

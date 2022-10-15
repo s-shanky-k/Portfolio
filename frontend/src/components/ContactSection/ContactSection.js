@@ -71,9 +71,16 @@ function ContactSection() {
 				<h1>Contact</h1>
 			</div>
 			<div className="contact-content">
-				{/* <div className="contact-text">
-					This what I am listening to now!
-				</div> */}
+				<div className="contact-text">
+					<p>
+						<i className="far fa-envelope text-gray-500 text-lg mr-2"></i>
+						sehankar20@gmail.com
+					</p>
+					<p className="mt-1">
+						Additionally, you can send me a message through this
+						website!
+					</p>
+				</div>
 				<div className="contact-form">
 					<Fade>
 						<form

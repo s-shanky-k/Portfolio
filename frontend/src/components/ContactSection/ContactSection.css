@@ -54,7 +54,8 @@
 	align-items: center;
 	justify-content: flex-start;
 	color: var(--theme-primary-font-color);
-	padding: 0 1rem;
+	padding: 1rem 1rem;
+	display: block;
 }
 
 .contact-form {

@@ -11,7 +11,7 @@ function Loader() {
 	}, []);
 
 	return (
-		<div className="h-screen w-screen z-1 flex justify-center items-center bg-theme-bg-color">
+		<div className="w-screen h-screen max-w-[1600px] ml-auto mr-auto z-1 flex justify-center items-center bg-theme-bg-color">
 			<div className="animate-spin-med">
 				<Zoom opposite when={loading}>
 					<div className="flex h-64 w-64 relative justify-center items-center">

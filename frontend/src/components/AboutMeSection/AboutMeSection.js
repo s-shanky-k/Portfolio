@@ -20,15 +20,16 @@ function AboutMeSection() {
 						/>
 					</div>
 				</Fade>
-				<Fade>
-					<div className="aboutme-text">
-						{AboutMeData.content.map((item, index) => (
+
+				<div className="aboutme-text">
+					{AboutMeData.content.map((item, index) => (
+						<Fade key={index + 1}>
 							<p className="aboutme-text-para" key={index + 1}>
 								{item}
 							</p>
-						))}
-					</div>
-				</Fade>
+						</Fade>
+					))}
+				</div>
 			</div>
 		</div>
 	);
