@@ -2,7 +2,7 @@ export const AboutMeData = {
 	image: "images/aboutme/pic1.jpeg",
 	content: [
 		`Hey there!`,
-		`My name is Shankar Kumar S and friends call me Shankyyyyy!
+		`My name is Shankar Kumar S, populary known as Shanky!
 		 My curiosity towards the possibilities of what can be done using a computer
 		 led me to take up Computer Science as my undergraduate field of study.`,
 		`Over the years, I have dipped my feet into various domains such as Machine Learning,

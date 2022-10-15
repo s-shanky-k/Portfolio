@@ -4,7 +4,7 @@ export const EducationData = [
 		img: "logos/education/ceg.png",
 		domain: "BE Computer Science and Engineering",
 		endDate: "May'22",
-		achievements: ["CGPA: 9.24/10"],
+		achievements: ["CGPA: 9.27/10"],
 	},
 
 	{

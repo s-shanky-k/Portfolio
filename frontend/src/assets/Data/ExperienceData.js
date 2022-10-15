@@ -2,6 +2,20 @@ export const ExperienceData = [
 	{
 		name: "Wells Fargo",
 		img: "logos/experience/wellsfargo.png",
+		role: "Software Developer Engineer",
+		startDate: "Jul'22",
+		endDate: "Present",
+		location: "Bangalore, India",
+		duties: [
+			"Full stack development under the Enterprise Functions Technology team",
+			"Development, maintenance, and enhancement of the Secured Funding Trading (LARST) & 5G Reporting Platform (LADIS).",
+			"Experience in Angular, ASP.Net and SQL Server.",
+		],
+	},
+
+	{
+		name: "Wells Fargo",
+		img: "logos/experience/wellsfargo.png",
 		role: "Software Developer Engineer Intern",
 		startDate: "Apr'21",
 		endDate: "Jul'21",
@@ -25,21 +39,6 @@ export const ExperienceData = [
 			"Identified and performed a detailed study on the various biases that affect satellite car detection models.",
 			"Worked on solutions to tackle bias and proved performance improvement by studying precision-recall characteristics.",
 			"Presented at the 18th IMISCOE Annual Conference held in Luxembourg and at IC2S2 2021 held in Zurich.",
-		],
-	},
-
-	{
-		name: "Qatar Computing Research Institute",
-		img: "logos/experience/qcri.png",
-		role: "Summer Research Intern",
-		startDate: "May'20",
-		endDate: "Jul'20",
-		location: "Doha, Qatar (Remote)",
-		duties: [
-			"Worked on a research project titled “Multi Task Learning for Road Attribute Prediction Using Graph Neural Networks”.",
-			"Implemented a decision tree algorithm to predict road attributes from vehicle GPS trajectories.",
-			"Improved the algorithm to predict one-way/two-way road attribute using radius search.",
-			"Performed feature engineering by extracting features like distance, velocity, direction of heading at every GPS point.",
 		],
 	},
 ];
