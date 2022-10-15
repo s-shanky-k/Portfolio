@@ -77,7 +77,7 @@ function ContactSection() {
 						sehankar20@gmail.com
 					</p>
 					<p className="mt-1">
-						Additionaly, you can send me message through this
+						Additionaly, you can send me a message through this
 						website!
 					</p>
 				</div>
