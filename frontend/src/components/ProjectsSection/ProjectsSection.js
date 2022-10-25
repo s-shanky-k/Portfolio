@@ -38,7 +38,7 @@ function ProjectsSection() {
 				)}
 				{!showMore && (
 					<button
-						className="text-theme-cyan text-xl inline-block animate-bounce hover:text-theme-bright-pink transition ease-in-out duration-300"
+						className="text-theme-cyan text-xl inline-block animate-bounce hover:text-theme-bright-pink transition ease-in-out duration-300 mt-4 md:mt-0"
 						onClick={handleShowMore}
 					>
 						<span className="block">Other Projects</span>
