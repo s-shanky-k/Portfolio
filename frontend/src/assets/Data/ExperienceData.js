@@ -2,7 +2,7 @@ export const ExperienceData = [
 	{
 		name: "Wells Fargo",
 		img: "logos/experience/wellsfargo.png",
-		role: "Software Developer Engineer",
+		role: "Software Development Engineer",
 		startDate: "Jul'22",
 		endDate: "Present",
 		location: "Bangalore, India",
@@ -16,10 +16,10 @@ export const ExperienceData = [
 	{
 		name: "Wells Fargo",
 		img: "logos/experience/wellsfargo.png",
-		role: "Software Developer Engineer Intern",
+		role: "Software Development Engineer Intern",
 		startDate: "Apr'21",
 		endDate: "Jul'21",
-		location: "Bangalore, India",
+		location: "Hyderbad, India",
 		duties: [
 			"Designed and developed an unsupervised machine learning model to identify location-based fraud transactions.",
 			"Used Pyspark to perform distributed data processing, model training and prediction.",

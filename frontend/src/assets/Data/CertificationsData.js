@@ -1,5 +1,10 @@
 export const CertificationsData = [
 	{
+		title: "Microsoft Azure Fundamentals",
+		content: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+		link: "https://learn.microsoft.com/en-us/users/shankarkumar-0953/certifications/certification-print/certification.azure-fundamentals?source=docs",
+	},
+	{
 		title: "Machine Learning",
 		content:
 			"Authorized by Stanford University and offered through Coursera",

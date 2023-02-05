@@ -1,11 +1,13 @@
 export const AchievementsData = [
 	{
 		title: "General Secretary, Computer Science and Engineering Association (CSEA)",
-		content: "October’21 - May'22",
+		content:
+			"Responsible for leading students, organizing the annual intra-college symposium Sync and inter-college symposium Abacus",
 	},
 	{
 		title: "Director, Computer Society of Anna University (CSAU)",
-		content: "August’20 – May'22",
+		content:
+			"Responsible for leading the society and coordinating various workshops and technical events year-round",
 	},
 	{
 		title: "Frontend Developer, CSEA",
