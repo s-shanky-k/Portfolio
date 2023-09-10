@@ -1,5 +1,10 @@
 export const AchievementsData = [
 	{
+		title: "Course Assistant, Siebel Center for Computer Science, UIUC",
+		content:
+			"Course Assistant for CS 222 - Software Design Lab. Responsible for mentoring three teams in their semester long software project.",
+	},
+	{
 		title: "General Secretary, Computer Science and Engineering Association (CSEA)",
 		content:
 			"Responsible for leading students, organizing the annual intra-college symposium Sync and inter-college symposium Abacus",
