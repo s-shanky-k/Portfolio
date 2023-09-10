@@ -1,5 +1,14 @@
 export const EducationData = [
 	{
+		name: "University of Illinois Urbana-Champaign",
+		img: "logos/education/uiuc.png",
+		domain: "Masters in Computer Science",
+		endDate: "Present",
+		achievements: [
+			"Coursework: Deep learning for Computer Vision, Data Mining Principles, Databases",
+		],
+	},
+	{
 		name: "College Of Engineering Guindy, Anna Univeristy",
 		img: "logos/education/ceg.png",
 		domain: "BE Computer Science and Engineering",

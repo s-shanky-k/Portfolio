@@ -4,12 +4,12 @@ export const ExperienceData = [
 		img: "logos/experience/wellsfargo.png",
 		role: "Software Development Engineer",
 		startDate: "Jul'22",
-		endDate: "Present",
+		endDate: "Jul'23",
 		location: "Bangalore, India",
 		duties: [
-			"Full stack development under the Enterprise Functions Technology team",
-			"Development, maintenance, and enhancement of the Secured Funding Trading (LARST) & 5G Reporting Platform (LADIS).",
-			"Experience in Angular, ASP.Net and SQL Server.",
+			"Contributed to full stack development using AngularJS and ASP.NET within the Corporate Treasury team.",
+			"Developed, maintained, & enhanced the Financial Data Landing Zone Platform.",
+			"Built springboot APIs to spawn and execute spark jobs.",
 		],
 	},
 
