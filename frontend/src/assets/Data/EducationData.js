@@ -5,7 +5,8 @@ export const EducationData = [
 		domain: "Masters in Computer Science",
 		endDate: "Present",
 		achievements: [
-			"Coursework: Deep learning for Computer Vision, Data Mining Principles, Databases",
+			"CGPA: 4.0/4.0",
+			"Coursework: Deep learning for Computer Vision, Conversational AI, Text Mining, Applied ML, Databases",
 		],
 	},
 	{
@@ -13,7 +14,10 @@ export const EducationData = [
 		img: "logos/education/ceg.png",
 		domain: "BE Computer Science and Engineering",
 		endDate: "May'22",
-		achievements: ["CGPA: 9.27/10"],
+		achievements: [
+			"CGPA: 9.27/10",
+			"Coursework: Data Structures and Algorithms, Operating Systems, Machine Learning, Big Data Analytics",
+		],
 	},
 
 	{

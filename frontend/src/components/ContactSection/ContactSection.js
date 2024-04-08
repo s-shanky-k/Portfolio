@@ -74,7 +74,7 @@ function ContactSection() {
 				<div className="contact-text">
 					<p>
 						<i className="far fa-envelope text-gray-500 text-lg mr-2"></i>
-						sehankar20@gmail.com
+						seshankar20@gmail.com
 					</p>
 					<p className="mt-1">
 						Additionally, you can send me a message through this

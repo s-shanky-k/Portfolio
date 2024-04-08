@@ -2,27 +2,27 @@ export const SkillsData = [
 	{
 		img: "logos/skills/languages.svg",
 		title: "Programming Languages",
-		skills: "C/C++/C#/Python/Java",
+		skills: "C++/C#/Python/Java",
 	},
 	{
 		img: "logos/skills/data-analysis.svg",
 		title: "Data Analysis",
-		skills: "Pandas/Numpy/Geopandas",
+		skills: "Pandas/Numpy",
 	},
 	{
 		img: "logos/skills/data-analysis-tools.svg",
-		title: "Data Analytics Framework",
-		skills: "Pyspark/Kafka",
+		title: "Data Pipeline Framework",
+		skills: "Apache Kafka",
 	},
 	{
 		img: "logos/skills/tensorflow.svg",
 		title: "Machine Learning",
-		skills: "Scikit-Learn/Tensorflow/PyTorch",
+		skills: "PyTorch/Tensorflow/Scikit-Learn",
 	},
 	{
 		img: "logos/skills/database.svg",
 		title: "Databases",
-		skills: "PostgreSQL/SQL Server",
+		skills: "MYSQL/MS SQL/PostgreSQL",
 	},
 	{
 		img: "logos/skills/web.svg",
@@ -32,12 +32,12 @@ export const SkillsData = [
 	{
 		img: "logos/skills/react.svg",
 		title: "Frontend Frameworks",
-		skills: "React/Angular",
+		skills: "ReactJS/AngularJS",
 	},
 	{
 		img: "logos/skills/nodejs.svg",
 		title: "Backend Frameworks",
-		skills: "Flask/ASP.Net/NodeJS",
+		skills: "Flask/ASP.Net",
 	},
 	{
 		img: "logos/skills/coding.svg",

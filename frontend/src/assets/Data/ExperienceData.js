@@ -1,5 +1,19 @@
 export const ExperienceData = [
 	{
+		name: "University of Illinois Urbana Champaign",
+		img: "logos/experience/uiuc.png",
+		role: "Graduate Research Assistant",
+		startDate: "Feb'24",
+		endDate: "Present",
+		location: "Champaign, IL",
+		duties: [
+			"Leading the development and deployment of an LLM based misinformation detection browser plugin.",
+			"Fine-tuned large language models using PyTorch for high accuracy misinformation identification.",
+			"Developed Flask based model inference service, paired with React for frontend plugin development.",
+			"Containerized the model inference service using Docker with load balancing capabilities for enhanced scalability.",
+		],
+	},
+	{
 		name: "Wells Fargo",
 		img: "logos/experience/wellsfargo.png",
 		role: "Software Development Engineer",
@@ -7,9 +21,9 @@ export const ExperienceData = [
 		endDate: "Jul'23",
 		location: "Bangalore, India",
 		duties: [
-			"Contributed to full stack development using AngularJS and ASP.NET within the Corporate Treasury team.",
-			"Developed, maintained, & enhanced the Financial Data Landing Zone Platform.",
-			"Built springboot APIs to spawn and execute spark jobs.",
+			"Contributed to full stack development using Angular, MS SQL and ASP.NET within the Corporate Treasury team.",
+			"Developed a microservice to automate Spark job executions in parallel, resulting in 80% reduction in manual workload.",
+			"Enhanced the financial data job dashboard using visualizations, improving data access and analysis.",
 		],
 	},
 
@@ -22,8 +36,7 @@ export const ExperienceData = [
 		location: "Hyderbad, India",
 		duties: [
 			"Designed and developed an unsupervised machine learning model to identify location-based fraud transactions.",
-			"Used Pyspark to perform distributed data processing, model training and prediction.",
-			"Developed real-time streaming data pipelines using Kafka.",
+			"Developed Apache Kafka data pipelines to retrieve and publish streaming data.",
 		],
 	},
 
