@@ -22,7 +22,7 @@ function Home() {
 		if (width <= 1024) {
 			setAnimationDelay(700);
 		} else {
-			setAnimationDelay(2000);
+			setAnimationDelay(1350); //2000
 		}
 	}, [width]);
 

@@ -15,7 +15,7 @@ function FooterSection() {
 					<SocialMedia />
 				</div>
 				<p className="text-xs mt-2 text-gray-600">
-					Copyright <i className="far fa-copyright text-xs"></i> 2022
+					Copyright <i className="far fa-copyright text-xs"></i> 2024
 					Shankar Kumar S
 				</p>
 			</div>
